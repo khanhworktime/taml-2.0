@@ -8,7 +8,7 @@
   height: 670px;
   background: #fff;
   position: relative;
-  animation: bgslider 10s infinite reverse;
+  animation: bgslider 15s infinite;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,7 +17,7 @@
 .title-container {
   height: fit-content;
   min-height: 670px;
-  animation: bgcolor 10s infinite reverse;
+  animation: bgcolor 15s infinite reverse;
   position: absolute;
   padding-left: 70px;
   width: 45%;
@@ -126,14 +126,17 @@
   0% {
     background-image: url("../src/img/slider/slider1.jpg");
   }
-  25% {
+  20% {
     background-image: url("../src/img/slider/slider2.jpg");
   }
-  50% {
+  40% {
     background-image: url("../src/img/slider/slider3.jpg");
   }
-  75% {
+  60% {
     background-image: url("../src/img/slider/slider4.jpg");
+  }
+  80% {
+    background-image: url("../src/img/slider/slider5.jpeg");
   }
   100% {
     background-image: url("../src/img/slider/slider1.jpg");
