@@ -92,6 +92,70 @@
 #author4 {
   background-image: url("../src/img/author/author4.jpg");
 }
+
+/* Third component */
+.third-component {
+  height: 600px;
+  margin-bottom: 20px;
+}
+
+.third-cover {
+  width: 80%;
+  height: 100%;
+  background: url("../src/img/third-cover.png") center no-repeat;
+  background-size: cover;
+  box-shadow: 5px 5px 5px grey;
+  border-radius: 3px;
+}
+
+.third-content {
+  padding: 40px 20px;
+}
+
+.single-post {
+  height: 18%;
+  width: 450px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
+  transition: all 0.2s;
+}
+
+.single-post:hover {
+  transform: scale(1.2);
+}
+
+.post-info {
+  padding: 10px 20px;
+}
+.post-header {
+  font-size: 1.1rem;
+}
+
+.post-credit {
+  font-size: 0.8rem;
+  color: #8d8d8d;
+  margin: 0;
+}
+
+/* Fourth component */
+
+.fourth-component {
+  height: 650px;
+  padding: 10px 40px;
+}
+.sale-header {
+  background: rgb(149, 12, 23);
+  color: #ffffff;
+  text-align: center;
+}
+.sale-container {
+  height: 500px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 2px solid rgb(149, 12, 23);
+}
+
 /* KeyFrame */
 @keyframes bgcolor {
   0% {

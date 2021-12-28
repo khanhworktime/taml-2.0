@@ -17,6 +17,28 @@
   font-weight: 500;
 }
 
-.navbar a[class="current"] {
+.navbar a[class="current"],
+.navbar-toggle-list a[class="current"] {
   font-weight: 700;
+}
+.menu-toggle {
+  cursor: pointer;
+}
+
+.navbar-toggle {
+  display: block;
+  z-index: 20;
+  border-radius: 3px;
+  float: right;
+  background: #fff;
+  transition: all 1.2s;
+}
+
+.navbar-toggle-list a {
+  color: #000;
+  padding: 10px 20px;
+}
+.navbar-toggle-list a:hover {
+  background: rgb(5, 85, 73);
+  color: #fff;
 }

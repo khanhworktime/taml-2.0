@@ -1,7 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("./hvr.css");
 html {
   font-family: "Montserrat" !important;
 }
 a {
   text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.m-button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: rgb(149, 12, 23);
+  border: none;
+  color: #fff;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
+  transition: transform 0.3s;
+}
+
+.m-button:hover {
+  transform: scale(1.2);
 }
