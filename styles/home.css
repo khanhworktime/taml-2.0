@@ -94,9 +94,16 @@
 }
 
 /* Third component */
+.third-component-header {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
 .third-component {
   height: 600px;
   margin-bottom: 20px;
+  margin-right: 0px !important;
 }
 
 .third-cover {
@@ -109,7 +116,7 @@
 }
 
 .third-content {
-  padding: 40px 20px;
+  padding: 40px 0px;
 }
 
 .single-post {
@@ -155,7 +162,51 @@
   border-bottom-right-radius: 5px;
   border: 2px solid rgb(149, 12, 23);
 }
+.promo-image-wrap {
+  height: 100%;
+}
+.promo-image {
+  height: 100%;
+  background: url("../src/img/christmas/chrismas2.jpg") center no-repeat;
+  background-size: cover;
+}
 
+/* Fifth component */
+.fifth-component {
+  width: 100%;
+  min-height: 650px;
+  margin-bottom: 200px;
+}
+
+.service-item {
+  padding: 30px 20px;
+  width: 300px;
+  height: 650px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
+  margin-bottom: 20px;
+}
+
+.service-price {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: rgb(214, 39, 54);
+}
+.service-item img {
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.service-unit {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.service-button {
+  width: fit-content;
+  align-self: center;
+}
+.service-description {
+  text-align: justify;
+}
 /* KeyFrame */
 @keyframes bgcolor {
   0% {
