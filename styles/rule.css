@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("./hvr.css");
-html {
+html,
+body {
   font-family: "Montserrat" !important;
 }
 a {
@@ -32,4 +33,23 @@ ul {
 
 .m-button:hover {
   transform: scale(1.2);
+}
+
+*::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+*::-webkit-scrollbar:vertical {
+  width: 11px;
+}
+*::-webkit-scrollbar:horizontal {
+  height: 11px;
+}
+*::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 2px solid white; /* should match background, can't be transparent */
+  background-color: rgba(0, 0, 0, 0.5);
+}
+*::-webkit-scrollbar-track {
+  background-color: #fff;
+  border-radius: 8px;
 }

@@ -27,25 +27,32 @@
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link
+      rel="shortcut icon"
+      href="./src/svg/favicon.svg"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="./styles/home.css" />
 
-    <title>Home</title>
+    <title>Tiệm ảnh màu lá | Home</title>
   </head>
   <body class="noselect">
     <!-- First part -->
     <!-- Nav -->
-    <div class="first-component">
-      <div class="navbar d-flex">
-        <div class="nav-brand">
-          <img src="./src/img/logo.png" alt="" />
-        </div>
-        <div class="nav-items d-none d-md-block">
-          <a href="#" id="home" class="current">Home</a>
-          <a href="#" id="blog">Blog</a>
-          <a href="#" id="service">Dịch vụ</a>
-          <a href="#" id="gallery">Bộ sưu tập</a>
-          <a href="#" id="contact">Liên hệ</a>
-        </div>
+    <div class="navbar d-flex justify-content-between fixed-top">
+      <div class="nav-brand">
+        <img src="./src/img/logo.png" alt="" />
+      </div>
+      <div class="nav-items order-3 d-none d-md-block">
+        <a href="#" id="home" class="current">Home</a>
+        <a href="./news.html" id="blog">Blog</a>
+        <a href="#" id="service">Dịch vụ</a>
+        <a href="#" id="gallery">Bộ sưu tập</a>
+        <a href="#" id="contact">Liên hệ</a>
+      </div>
+
+      <div class="navbar-toggle">
         <svg
           width="37"
           height="31"
@@ -67,16 +74,17 @@
           <rect x="6" y="14" width="25" height="2" rx="1" fill="#8BC160" />
           <rect x="6" y="22" width="25" height="2" rx="1" fill="#8BC160" />
         </svg>
-      </div>
-      <div class="navbar-toggle d-none">
-        <div class="navbar-toggle-list d-flex flex-column">
+        <div class="navbar-toggle-list d-none d-flex flex-column">
           <a href="#" class="current">Home</a>
-          <a href="">Blog</a>
+          <a href="./news.html">Blog</a>
           <a href="">Dịch vụ</a>
           <a href="">Bộ sưu tập</a>
           <a href="">Liên hệ</a>
         </div>
       </div>
+    </div>
+
+    <div class="first-component">
       <!-- Title -->
       <div
         class="title-container d-flex flex-column justify-content-center"
@@ -179,7 +187,7 @@
           />
           <div class="post-info d-flex flex-column justify-content-between">
             <h3 class="post-header">
-              Ảnh chân dung chuyên nghiệp hiện đang là xu hướng mới của giới trẻ
+              Chân dung chuyên nghiệp, xu hướng mới của giới trẻ
             </h3>
             <p class="post-credit">Bởi Khánh lúc 23 Thg 9, 2021</p>
           </div>
@@ -302,8 +310,8 @@
           <img src="./src/img/service/service1.jpg" alt="" srcset="" />
           <p class="service-description">
             Với mục tiêu tìm ra được phiên bản tốt nhất của bạn, chúng tớ mang
-            đến cho các bạn lựa chọn chụp ảnh cá nhân bao gồm dựng phối cảnh,
-            dịch vụ trang điểm tại chổ và chỉnh sửa ảnh cực chi tiết
+            đến cho các bạn lựa chọn chụp ảnh bao gồm dựng phối cảnh, trang điểm
+            tại chổ và chỉnh sửa ảnh.
           </p>
           <span class="service-price text-center">300.000 VND</span>
           <p class="service-unit text-center">1 buổi chụp ảnh</p>
@@ -340,18 +348,15 @@
           "
           data-aos="zoom-out"
         >
-          <h3 class="service-header text-center">
-            Chụp ảnh và ghi hình tiệc cưới
-          </h3>
+          <h3 class="service-header text-center">Chụp và quay ảnh cưới</h3>
           <img src="./src/img/service/service3.jpg" alt="" srcset="" />
           <p class="service-description">
-            Tiếng chuông nhà thờ vang lên, nhẫn cưới sẵn sàng, áo cưới lung
-            linh, vest ngay ngắn, CƯỚI THÔI. Những dịp quan trọng cần những sự
-            đầu tư thích đáng, hãy để chúng tớ ghi lại kỉ niệm tuyệt vời này
-            nhé!
+            Nhẫn cưới sẵn sàng, áo cưới lung linh, vest ngay ngắn, CƯỚI THÔI.
+            Những dịp quan trọng cần những sự đầu tư thích đáng, hãy ghi lại kỉ
+            niệm tuyệt vời này nhé!
           </p>
-          <span class="service-price text-center">20.000.000 VND</span>
-          <p class="service-unit text-center">1 buổi chụp ảnh</p>
+          <span class="service-price text-center">22.000.000 VND</span>
+          <p class="service-unit text-center">1 bộ ảnh cưới</p>
           <button class="m-button service-button">Tham khảo</button>
         </div>
         <div
@@ -371,8 +376,8 @@
             và mang lại cảm giác tươi mới. Chúng tớ xin giới thiệu, gói chụp ảnh
             mockup sản phẩm cực kì chuyên nghiệp.
           </p>
-          <span class="service-price text-center">300.000 VND</span>
-          <p class="service-unit text-center">1 buổi chụp ảnh</p>
+          <span class="service-price text-center">1.500.000 VND</span>
+          <p class="service-unit text-center">1 buổi chụp sản phẩm</p>
           <button class="m-button service-button">Tham khảo</button>
         </div>
       </div>
@@ -554,11 +559,12 @@
     </footer>
 
     <script src="./js/slider.js"></script>
+    <script src="./js/nav-scroll.js"></script>
     <script>
       $(document).ready(function () {
         AOS.init();
         $(".menu-toggle").click(() => {
-          $(".navbar-toggle").toggleClass("d-none");
+          $(".navbar-toggle-list").toggleClass("d-none");
         });
       });
     </script>
