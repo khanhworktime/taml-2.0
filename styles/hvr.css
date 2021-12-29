@@ -20,8 +20,8 @@
 .hvr-grow:active,
 .hvr-grow:focus,
 .hvr-grow:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1) !important;
+  transform: scale(1.1) !important;
 }
 .hvr-shrink {
   display: inline-block;
@@ -42,8 +42,8 @@
 }
 @-webkit-keyframes hvr-pulse {
   25% {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1) !important;
+    transform: scale(1.1) !important;
   }
   75% {
     -webkit-transform: scale(0.9);
@@ -52,8 +52,8 @@
 }
 @keyframes hvr-pulse {
   25% {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1) !important;
+    transform: scale(1.1) !important;
   }
   75% {
     -webkit-transform: scale(0.9);
@@ -81,14 +81,14 @@
 }
 @-webkit-keyframes hvr-pulse-grow {
   to {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1) !important;
+    transform: scale(1.1) !important;
   }
 }
 @keyframes hvr-pulse-grow {
   to {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1) !important;
+    transform: scale(1.1) !important;
   }
 }
 .hvr-pulse-grow {
@@ -280,8 +280,8 @@
 .hvr-grow-rotate:active,
 .hvr-grow-rotate:focus,
 .hvr-grow-rotate:hover {
-  -webkit-transform: scale(1.1) rotate(4deg);
-  transform: scale(1.1) rotate(4deg);
+  -webkit-transform: scale(1.1) rotate(4deg) !important;
+  transform: scale(1.1) rotate(4deg) !important;
 }
 .hvr-float {
   display: inline-block;
@@ -2492,8 +2492,8 @@
 .hvr-grow-shadow:focus,
 .hvr-grow-shadow:hover {
   box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1) !important;
+  transform: scale(1.1) !important;
 }
 .hvr-box-shadow-outset {
   display: inline-block;
