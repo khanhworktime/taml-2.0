@@ -37,8 +37,13 @@
 
     <title>Tiệm ảnh màu lá | Home</title>
   </head>
-  <body class="noselect">
-    <!-- First part -->
+  <body class="noselect position-relative">
+    <!-- Loading -->
+    <div
+      class="loading-screen d-flex justify-content-center align-items-center"
+    >
+      <div class="loader"></div>
+    </div>
     <!-- Nav -->
     <div class="navbar d-flex justify-content-between fixed-top">
       <a href="#" class="nav-brand">
@@ -566,6 +571,9 @@
     <script>
       $(document).ready(function () {
         AOS.init();
+        setTimeout(() => {
+          $(".loading-screen").addClass("none-fade");
+        }, 3000);
         $(".menu-toggle").click(() => {
           $(".navbar-toggle-list").toggleClass("d-none");
         });
