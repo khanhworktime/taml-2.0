@@ -15,6 +15,10 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -25,6 +29,15 @@
       rel="stylesheet"
     />
 
+    <script src="https://kit.fontawesome.com/7414e22221.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
@@ -33,24 +46,23 @@
       href="./src/svg/favicon.svg"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="./styles/evergreen.css" />
+    <link rel="stylesheet" href="./styles/contact.css" />
 
-    <title>
-      Tiệm ảnh màu lá | Màu sắc nội thất nổi bậc năm 2022, Evergreen
-    </title>
+    <title>Tiệm ảnh màu lá | Liên hệ</title>
   </head>
-  <body class="noselect">
+
+  <body>
     <!-- Navbar -->
     <div class="navbar d-flex justify-content-between fixed-top">
-      <a href="./index.html" class="nav-brand">
+      <a href="#" class="nav-brand">
         <img src="./src/img/logo.svg" alt="" />
       </a>
       <div class="nav-items order-3 d-none d-md-block">
         <a href="./index.html" id="home">Home</a>
-        <a href="./news.html" id="blog" class="current">Blog</a>
-        <a href="./contact.html" id="service">Dịch vụ</a>
+        <a href="./news.html" id="blog">Blog</a>
+        <a href="#" id="service">Dịch vụ</a>
         <a href="#" id="gallery">Bộ sưu tập</a>
-        <a href="#" id="contact">Liên hệ</a>
+        <a href="#" class="current" id="contact">Liên hệ</a>
       </div>
 
       <div class="navbar-toggle d-block d-md-none">
@@ -77,314 +89,128 @@
         </svg>
         <div class="navbar-toggle-list d-none d-flex flex-column">
           <a href="./index.html">Home</a>
-          <a href="./news.html" class="current">Blog</a>
+          <a href="./news.html">Blog</a>
           <a href="">Dịch vụ</a>
           <a href="">Bộ sưu tập</a>
-          <a href="">Liên hệ</a>
+          <a href="#" class="current">Liên hệ</a>
         </div>
       </div>
     </div>
-
-    <!-- First component -->
-    <div
-      class="
-        first-component
-        text-center
-        d-flex
-        flex-column
-        justify-content-center
-        align-items-center
-      "
-    >
-      <h3 class="firstnews-subtitle">— Màu sắc —</h3>
-      <h1 class="firstnews-header" data-aos="fade-up">
-        Màu sắc nội thất nổi bậc năm 2022, Evergreen
-      </h1>
-      <p class="firstnews-description" data-aos="fade-up">
-        Đồng hành cùng Very Peri, Sherwin Williams công ty chuyên cung cấp màu
-        sơn gia đình cũng công bố sắc màu nội thất của năm tới 2022, Màu xanh
-        sương mù ...
-      </p>
-      <p class="firstnews-credit" data-aos="fade-in">
-        Viết bởi <b>Khánh Min</b>, ngày đăng 23 Thg 12, 2021
-      </p>
-    </div>
-    <!-- News view -->
-    <div
-      class="
-        news-view
-        d-flex
-        flex-column
-        align-items-center
-        justify-content-center
-      "
-    >
-      <!-- Second component -->
+    <!--end Nav-->
+    <div class="contact-info d-flex justify-content-center align-items-center">
       <div
-        class="
-          second-component
-          mt-5
-          d-flex
-          flex-row
-          justify-content-between
-          align-items-center
-        "
-      >
-        <div
-          class="author-wrap d-flex justify-content-between align-items-center"
+        class="col-md-6 d-none d-md-block contact-cover"
+        data-aos="zoom-in-up"
+      ></div>
+      <div class="col-md-6 about">
+        <h2 class="about-header">
+          Tiệm ảnh màu lá, nơi giúp bạn tìm được phiên bản tốt nhất của mình
+        </h2>
+        <p class="description">
+          Đây là dự án hoàn thành môn "Lập trình web" được sự tham gia của 4
+          thành viên: Chí Khánh, Khánh Min, Đình Hùng và Đăng Huy. Với chủ đề là
+          một trang web cho thuê dịch vụ chụp ảnh, chúng mình đã tạo ra được sản
+          phẩm đầu tiên từ A đến Z, do vậy chúng tớ xin trân trọng cảm ơn các
+          bạn đã ghé xem thành quả của tụi tớ!
+        </p>
+      </div>
+    </div>
+    <!-- Member info -->
+    <div class="fake-cover">
+      <div class="member-contact-card d-none d-md-block d-xl-none fake">
+        <h3 class="info-header">Thông tin tụi tớ</h3>
+        <div class="member-info-wrap d-flex">
+          <ul class="member-list">
+            <li class="member-info"><a target="_blank" href="https://www.facebook.com/chikhanh.duong"><img src="./src/svg/facebook.svg" width="22px" height="22px" alt=""></a> Võ Chí Khánh</li>
+            <li class="member-info"><a target="_blank" href="https://www.facebook.com/min.nguyen.2503"><img src="./src/svg/facebook.svg" width="22px" height="22px" alt=""></a> Nguyễn Khánh Min</li>
+            <li class="member-info"><a target="_blank" href="https://www.facebook.com/profile.php?id=100014821934325"><img src="./src/svg/facebook.svg" width="22px" height="22px" alt=""></a> Nguyễn Đình Hùng</li>
+            <li class="member-info"><a target="_blank" href="https://www.facebook.com/profile.php?id=100015979178787"><img src="./src/svg/facebook.svg" width="22px" height="22px" alt=""></a> Đinh Trần Đăng Huy</li>
+          </ul>
+          <ul class="member-list">
+            <li class="member-info">20DH110125</li>
+            <li class="member-info">20DH112080</li>
+            <li class="member-info">20DH111994</li>
+            <li class="member-info">20DH111999</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="contact-wrap row">
+      <div class="contact-col-1 col-md-5">
+        <div class="member-contact-card d-block d-md-none d-xl-block">
+          <h3 class="info-header">Thông tin tụi tớ</h3>
+          <div class="member-info-wrap d-flex">
+            <ul class="member-list">
+              <li class="member-info"><a target="_blank" href="https://www.facebook.com/chikhanh.duong"><img src="./src/svg/facebook.svg" width="22px" height="22px" alt=""></a> Võ Chí Khánh</li>
+              <li class="member-info"><a target="_blank" href="https://www.facebook.com/min.nguyen.2503"><img src="./src/svg/facebook.svg" width="22px" height="22px" alt=""></a> Nguyễn Khánh Min</li>
+              <li class="member-info"><a target="_blank" href="https://www.facebook.com/profile.php?id=100014821934325"><img src="./src/svg/facebook.svg" width="22px" height="22px" alt=""></a> Nguyễn Đình Hùng</li>
+              <li class="member-info"><a target="_blank" href="https://www.facebook.com/profile.php?id=100015979178787"><img src="./src/svg/facebook.svg" width="22px" height="22px" alt=""></a> Đinh Trần Đăng Huy</li>
+            </ul>
+            <ul class="member-list">
+              <li class="member-info">20DH110125</li>
+              <li class="member-info">20DH112080</li>
+              <li class="member-info">20DH111994</li>
+              <li class="member-info">20DH111999</li>
+            </ul>
+          </div>
+        </div>
+        <form
+          class="contact-form d-flex justify-content-center align-items-center"
         >
-          <div class="author-image" id="author4"></div>
-          <div class="author-credit">
-            <p style="color: #747171; font-size: 0.8rem">
-              Viết bởi<br /><span
-                style="color: #000; font-weight: 500; font-size: 1.1rem"
-                >Khánh Min</span
-              >
-            </p>
-          </div>
-        </div>
-        <div class="emotion">
-          <input type="checkbox" id="checkbox" />
-          <label for="checkbox">
-            <svg
-              id="heart-svg"
-              viewBox="467 392 58 57"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g
-                id="Group"
-                fill="none"
-                fill-rule="evenodd"
-                transform="translate(467 392)"
-              >
-                <path
-                  d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
-                  id="heart"
-                  fill="#AAB8C2"
+          <div class="form-input">
+            <h3>Hãy gửi chúng tớ tin nhắn</h3>
+            <form>
+              <div class="form-line">
+                <label for="first_name">Họ</label>
+                <input
+                  type="text"
+                  name="first_name"
+                  placeholder="First Name..."
+                  required
                 />
-                <circle
-                  id="main-circ"
-                  fill="#E2264D"
-                  opacity="0"
-                  cx="29.5"
-                  cy="29.5"
-                  r="1.5"
+              </div>
+              <div class="form-line">
+                <label for="Last_name">Tên</label>
+                <input
+                  type="text"
+                  name="last_name"
+                  placeholder="Last Name..."
+                  required
                 />
-
-                <g id="grp7" opacity="0" transform="translate(7 6)">
-                  <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
-                  <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
-                </g>
-
-                <g id="grp6" opacity="0" transform="translate(0 28)">
-                  <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
-                  <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
-                </g>
-
-                <g id="grp3" opacity="0" transform="translate(52 28)">
-                  <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
-                  <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
-                </g>
-
-                <g id="grp2" opacity="0" transform="translate(44 6)">
-                  <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
-                  <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
-                </g>
-
-                <g id="grp5" opacity="0" transform="translate(14 50)">
-                  <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
-                  <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
-                </g>
-
-                <g id="grp4" opacity="0" transform="translate(35 50)">
-                  <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
-                  <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
-                </g>
-
-                <g id="grp1" opacity="0" transform="translate(24)">
-                  <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
-                  <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
-                </g>
-              </g>
-            </svg>
-          </label>
-        </div>
+              </div>
+              <div class="form-line">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email Here..."
+                  required
+                />
+              </div>
+              <div class="form-line">
+                <label for="message">Tin nhắn</label>
+                <textarea name="message" required></textarea>
+              </div>
+              <div class="form-line d-flex justify-content-center">
+                <button type="submit" class="m-button">Gửi tin nhắn</button>
+              </div>
+            </form>
+          </div>
+        </form>
       </div>
-    </div>
-    <!-- Main article, Thirth component -->
-    <div
-      class="
-        third-component
-        article-container
-        d-flex
-        align-items-center
-        justify-content-center
-      "
-    >
-      <div
-        class="
-          article
-          d-flex
-          flex-column
-          align-items-center
-          justify-content-center
-        "
-      >
-        <p class="nor-em">
-          Evergreen Fog là một loại màu sắc phức tạp dành cho những không gian
-          mong muốn có sự tinh tế hoàn hảo tuyệt đẹp và kết cấu hài hòa nhưng
-          đầy hiện đại cho nội và ngoại thất.
-        </p>
-        <p>
-          Sue Wadden, giám đốc tiếp thị màu sắc tại Sherwin-Williams cho biết:
-          “Evergreen Fog là một loại màu sắc phức tạp dành cho những không gian
-          mong muốn có một bóng râm tuyên bố tinh tế nhưng tuyệt đẹp. Evergreen
-          Fog truyền cảm hứng để chúng tôi bắt đầu lại và là một lựa chọn tuyệt
-          vời cho nội thất và ngoại thất hiện đại.
-        </p>
-        <div class="pic-box d-flex justify-content-center">
-          <div class="col">
-            <div class="pic" id="pic1"></div>
-          </div>
-          <div class="col">
-            <div class="pic" id="pic2"></div>
-          </div>
-        </div>
-        <div
-          class="pic-box d-flex justify-content-center"
-          style="height: 750px"
-        >
-          <div class="col">
-            <div class="pic" id="pic3"></div>
-          </div>
-        </div>
-        <h3>Sự trỗi dậy của màu xanh lá cây</h3>
-        <p>
-          Ngày càng có nhiều người quan tâm hơn đến màu xanh. Họ màu xanh rất đa
-          dạng, từ những cây họ hiền triết dịu êm như Evergreen Fog đến tông màu
-          đất và màu ngọc lục bảo. Tất cả các nghiên cứu của Wadden và xu hướng
-          của Evergreen Fog này sẽ nổi lên như là một sự lựa chọn cho màu sắc
-          của năm 2022
-        </p>
-        <p class="quote">
-          <b>Ý nghĩa màu xanh lá cây</b> hay còn gọi là xanh lục, là màu sắc đại
-          diện cho cây cối núi rừng. Nó không chỉ mang ý nghĩa như một màu sắc
-          đơn thuần. Mà hơn cả, nó còn là biểu tượng của sự an toàn.
-        </p>
-        <p>
-          Màu xanh lá cây, màu của năm phản ánh thực tế rằng chúng ta đã và đang
-          trải qua một đại dịch trên toàn thế giới. Màu xanh lá cây thưởng liên
-          quan đến sự chữa lành và sinh trưởng, mặc dù đó chỉ là suy nghĩ đơn
-          giản cuả một khía cạnh nhưng nó dễ dàng để tương quan giữa sự lựa chọn
-          cho phối màu nội thất năm nay.
-        </p>
-        <p>
-          Màu xanh lá cây theo quan điểm của nhà tâm lý học đó là màu của sắc
-          của thiên nhiên, cua sự hồi sinh và sinh trưởng và là màu biểu tượng
-          cho sự mới mẻ, Wadden tiếp tục nói: sự phổ biến của màu xanh xám dịu
-          nhẹ này giờ đây cho thấy màu sắc đó mang lại ý nghĩa sâu sắc như thế
-          nào, nó chính là sự tái sinh, sinh trưởng và sự khởi đầu lại.
-        </p>
-        <div class="fullwidth-pic" id="fullpic1"></div>
-        <h3>Sử dụng Evergreen Fog ở đâu</h3>
-        <p>
-          Bản chất của Evergreen Fog đó là sự quen thuộc và đầy thoải mái, nó
-          tỏa sáng như một phông nền đầy bình yên nhưng lại tươi mới hơn bất kì
-          không gian nào khi kết hợp chung. Tạo được chiều sâu và kết hợp với
-          các loại vải dệt có thể tạo được phong cách cổ điển nhưng trông rất tự
-          nhiên, thêm một chút lấp lánh của kim loại kết hợp với màu vàng sâm
-          hay đồng thau hoặc đen tuyền, tạo được khung cảnh nên thơ và đậm chất
-          nét riêng, nét cá tính cho chính ngôi nhà của mình.
-        </p>
-        <p>
-          Evergreen Fog màu của sự linh hoạt, sắc trầm và nhẹ nhàng phù hợp với
-          cá khu vực mang tính năng động nhưng lại đậm chất sang, được sử dụng
-          để làm sảnh tiếp khách hay khu vực nghỉ ngơi, thư giãn.
-        </p>
-        <!-- Article tag -->
-        <div class="article-tag d-flex">
-          <span class="tag">Màu sắc</span>
-          <span class="tag">Đời sống</span>
-          <span class="tag">Nội thất</span>
-        </div>
+      <div class="contact-col-2 col-md-7">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.463577157205!2d106.66530011458906!3d10.775762592321954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f9023a3a85d%3A0xdee5c99a7b02feab!2sHuflit!5e0!3m2!1svi!2sus!4v1640867684191!5m2!1svi!2sus"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          class="map"
+        ></iframe>
       </div>
     </div>
 
-    <!-- About athour -->
-    <div
-      class="author-about-wrap d-flex justify-content-center align-items-center"
-    >
-      <div
-        class="
-          author-about
-          flex-column
-          d-flex
-          justify-content-center
-          align-items-center
-        "
-        data-aos="fade-in"
-      >
-        <div class="author-img" id="author-about"></div>
-        <span class="author-tag">Tác giả</span>
-        <h3>Khánh Min</h3>
-        <p class="content text-center mt-3">
-          Là một người chụp ảnh tôi muốn bắt trọn được những khoảng khắc kỉ niệm
-          tươi đẹp và lưu trữ chúng 📸
-        </p>
-        <div class="author-link">
-          <a href="https://www.facebook.com/min.nguyen.2503"
-            ><img src="./src/svg/facebook.svg" width="25" height="25" alt="fb"
-          /></a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Read more -->
-    <div class="read-more-wrap text-center mb-3">
-      <h4 class="read-more ">Bài khác</div>
-    </div>
-
-    <!-- Fourth component -->
-    <div class="fourth-component container">
-        <div class="row justify-content-center align-items-center">
-            <a href="#" id="more-news1" class="hvr-grow align-items-center more-news col-sm-5 col-md-3 d-flex flex-column justify-content-end">
-                <h4 class="news-title text-center">Nụ cười “Gia Vị” cho cuộc sống tươi vui</h4>
-                <span class="news-date">Đăng ngày 20 Thg 10, 2021</span>
-            </a>
-            <a href="#" id="more-news2" class="hvr-grow align-items-center more-news col-sm-5 col-md-3 d-flex flex-column justify-content-end">
-                <h4 class="news-title text-center">Đôi mắt buồn trong ngày Sài Gòn bệnh</h4>
-                <span class="news-date">Đăng ngày 20 Thg 10, 2021</span>
-            </a>
-            <a href="#" id="more-news3" class="hvr-grow align-items-center more-news col-md-3 d-md-flex flex-column justify-content-end d-none">
-                <h4 class="news-title text-center">Lưu lại khoảnh khắc của thú cưng</h4>
-                <span class="news-date">Đăng ngày 20 Thg 10, 2021</span>
-            </a>
-        </div>
-    </div>
-
-    <!-- Footer -->
     <footer class="footer">
-      <div class="site-section">
-        <div class="container">
-          <div
-            class="
-              cta
-              d-block d-md-flex
-              align-items-center
-              px-5
-              justify-content-between
-            "
-          >
-            <div>
-              <h2 class="mb-0">Sẵn sàng để chụp ảnh chưa nào?</h2>
-              <h3 class="text-dark">Bắt đầu thôi!</h3>
-            </div>
-            <div class="hvr-grow ml-auto">
-              <a href="./contact.html" class="btn btn-dark rounded-0 py-3 px-5"
-                >Liên hệ</a
-              >
-            </div>
-          </div>
+
           <div class="row text-center">
             <div class="col-sm">
               <a href="#" class="footer-logo">Tiệm ảnh màu lá</a>
@@ -537,7 +363,7 @@
         </div>
       </div>
     </footer>
-
+    <script src="./js/slider.js"></script>
     <script src="./js/nav-scroll.js"></script>
     <script>
       $(document).ready(function () {

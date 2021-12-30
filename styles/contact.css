@@ -1,0 +1,94 @@
+@import url("./nav.css");
+@import url("./footer.css");
+@import url("./slider.css");
+
+/* Contact 1 */
+.contact-info {
+  padding: 100px 20px 30px 20px;
+  background: rgb(36, 126, 64);
+  min-height: 600px;
+}
+.contact-cover {
+  background: url("../src/img/news/news1.jpg") center center no-repeat;
+  background-size: cover;
+  width: 45%;
+  height: 700px;
+  border-radius: 10px;
+  box-shadow: 20px 16px 8px rgb(0 0 0 / 15%);
+}
+.about {
+  padding: 50px;
+  color: #fff;
+}
+
+.about-header {
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.description {
+  text-align: justify;
+}
+
+/* Contact main */
+.contact-wrap {
+  padding: 50px;
+}
+
+/* Member contact */
+.member-contact-card {
+  padding: 30px;
+  box-shadow: 0 0.26rem 2rem 0 rgb(0 0 0 / 14%);
+}
+.member-contact-card.fake {
+  margin: 50px 0 -40px 0;
+}
+
+.member-list {
+  padding: 0;
+  margin-right: 20px;
+}
+.member-info {
+  margin-bottom: 5px;
+}
+.member-info a {
+  margin-right: 10px;
+}
+.fake-cover {
+  padding: 0 50px;
+}
+
+/* Contact Form */
+.contact-form {
+  margin-top: 30px;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 0.26rem 2rem 0 rgb(0 0 0 / 14%);
+}
+
+.form-line {
+  margin-top: 20px;
+}
+
+.contact-form label {
+  min-width: 90px;
+}
+
+.contact-form input {
+  width: 100%;
+  padding: 10px 15px;
+}
+
+.contact-form textarea {
+  resize: none;
+  width: 100%;
+  height: 160px;
+  margin-left: 4px;
+  padding: 10px 15px;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0.26rem 2rem 0 rgb(0 0 0 / 14%);
+}
