@@ -576,13 +576,9 @@
     <script>
       $(document).ready(function () {
         AOS.init();
-        let stopwaiting = false;
-        while ((stopwaiting = false)) {
-          $(".loading-wait").load(() => {
-            stopwaiting = true;
-          });
-        }
-        setTimeout($(".loading-screen").addClass("none-fade"), 3000);
+        setTimeout(function () {
+          $(".loading-screen").addClass("none-fade");
+        }, 3000);
         $(".menu-toggle").click(() => {
           $(".navbar-toggle-list").toggleClass("d-none");
         });
