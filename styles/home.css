@@ -47,7 +47,7 @@
   position: relative;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: url("../src/img/leaf.jpg");
+  background-image: url("../src/img/slider/slider2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -202,6 +202,8 @@
   color: rgb(214, 39, 54);
 }
 .service-item img {
+  width: 260px;
+  height: 260px;
   border-radius: 5px;
   margin-bottom: 10px;
 }

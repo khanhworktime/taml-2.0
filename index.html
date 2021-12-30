@@ -42,6 +42,11 @@
     <div
       class="loading-screen d-flex justify-content-center align-items-center"
     >
+      <img
+        src="./src/img/slider/slider2.jpg"
+        class="loading-wait d-none"
+        alt=""
+      />
       <div class="loader"></div>
     </div>
     <!-- Nav -->
@@ -571,9 +576,13 @@
     <script>
       $(document).ready(function () {
         AOS.init();
-        setTimeout(() => {
-          $(".loading-screen").addClass("none-fade");
-        }, 3000);
+        let stopwaiting = false;
+        while ((stopwaiting = false)) {
+          $(".loading-wait").load(() => {
+            stopwaiting = true;
+          });
+        }
+        setTimeout($(".loading-screen").addClass("none-fade"), 3000);
         $(".menu-toggle").click(() => {
           $(".navbar-toggle-list").toggleClass("d-none");
         });
