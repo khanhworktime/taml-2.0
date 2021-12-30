@@ -41,9 +41,9 @@
     <!-- First part -->
     <!-- Nav -->
     <div class="navbar d-flex justify-content-between fixed-top">
-      <div class="nav-brand">
-        <img src="./src/img/logo.png" alt="" />
-      </div>
+      <a href="#" class="nav-brand">
+        <img src="./src/img/logo.svg" alt="" />
+      </a>
       <div class="nav-items order-3 d-none d-md-block">
         <a href="#" id="home" class="current">Home</a>
         <a href="./news.html" id="blog">Blog</a>
@@ -166,20 +166,24 @@
     <!-- Third component -->
     <h2 class="third-component-header">Blog của tiệm ảnh màu lá</h2>
     <div class="third-component row">
-      <div class="third-cover-container col-md-6 d-flex justify-content-center">
-        <div class="third-cover d-none d-md-block" data-aos="zoom-in-up"></div>
+      <div class="third-cover-container col-lg-6 d-flex justify-content-center">
+        <div class="third-cover d-none d-lg-block" data-aos="zoom-in-up"></div>
       </div>
       <div
         class="
           third-content
-          col-md-5
+          col-lg-5
           d-flex
           flex-column
           justify-content-between
           align-items-center
         "
       >
-        <div class="single-post hvr-grow d-flex" data-aos="fade-right">
+        <a
+          href="./evergreen.html"
+          class="single-post hvr-grow d-flex"
+          data-aos="fade-right"
+        >
           <div class="latest-img"></div>
           <div class="post-info d-flex flex-column justify-content-between">
             <h3 class="post-header">
@@ -187,7 +191,7 @@
             </h3>
             <p class="post-credit">Bởi Khánh Min lúc 23 Thg 12, 2021</p>
           </div>
-        </div>
+        </a>
         <div class="single-post hvr-grow d-flex" data-aos="fade-left">
           <img
             src="data:image/webp;base64,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"
@@ -196,7 +200,7 @@
           />
           <div class="post-info d-flex flex-column justify-content-between">
             <h3 class="post-header">
-              Bộ ảnh bãi biển Maldives trong xanh trong mùa thu tuyệt đẹp
+              Bộ ảnh bãi biển Maldives trong xanh tuyệt đẹp
             </h3>
             <p class="post-credit">Bởi Min lúc 18 Thg 8, 2021</p>
           </div>
@@ -222,7 +226,7 @@
           />
           <div class="post-info d-flex flex-column justify-content-between">
             <h3 class="post-header">
-              Bộ Mockup dựng sẳn cực xịn xò dành cho kinh doanh đồ uống
+              Bộ Mockup dựng sẳn cho kinh doanh đồ uống
             </h3>
             <p class="post-credit">Bởi Hùng lúc 5 Thg 8, 2021</p>
           </div>
@@ -235,7 +239,7 @@
           />
           <div class="post-info d-flex flex-column justify-content-between">
             <h3 class="post-header">
-              Studio chụp ảnh ma mị giữa lòng Hà Nội tấp nập cực chất
+              Studio chụp ảnh ma mị giữa lòng Hà Nội tấp nập
             </h3>
             <p class="post-credit">Bởi Khánh lúc 23 Thg 7, 2021</p>
           </div>
@@ -295,6 +299,7 @@
         <div
           class="
             service-item
+            hvr-grow
             col-md-3
             d-flex
             flex-column
@@ -316,6 +321,7 @@
         <div
           class="
             service-item
+            hvr-grow
             col-md-3
             d-flex
             flex-column
@@ -337,6 +343,7 @@
         <div
           class="
             service-item
+            hvr-grow
             col-md-3
             d-flex
             flex-column
@@ -358,6 +365,7 @@
         <div
           class="
             service-item
+            hvr-grow
             col-md-3
             d-flex
             flex-column
