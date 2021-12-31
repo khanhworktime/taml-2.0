@@ -9,6 +9,10 @@
   height: 45px;
 }
 
+.nav-items {
+  margin-right: 30px;
+}
+
 .navbar a {
   text-decoration: none;
   color: #fff;

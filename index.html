@@ -34,6 +34,7 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./styles/home.css" />
+    <script src="./js/web-load.js"></script>
 
     <title>Tiệm ảnh màu lá | Home</title>
   </head>
@@ -45,6 +46,7 @@
       <img
         src="./src/img/slider/slider2.jpg"
         class="loading-wait d-none"
+        onload="loaded()"
         alt=""
       />
       <div class="loader"></div>
@@ -57,8 +59,8 @@
       <div class="nav-items order-3 d-none d-md-block">
         <a href="#" id="home" class="current">Home</a>
         <a href="./news.html" id="blog">Blog</a>
-        <a href="#" id="service">Dịch vụ</a>
-        <a href="#" id="gallery">Bộ sưu tập</a>
+        <a href="./service.html" id="service">Dịch vụ</a>
+        <a href="./gallery.html" id="gallery">Bộ sưu tập</a>
         <a href="./contact.html" id="contact">Liên hệ</a>
       </div>
 
@@ -87,8 +89,8 @@
         <div class="navbar-toggle-list d-none d-flex flex-column">
           <a href="#" class="current">Home</a>
           <a href="./news.html">Blog</a>
-          <a href="">Dịch vụ</a>
-          <a href="">Bộ sưu tập</a>
+          <a href="./service.html">Dịch vụ</a>
+          <a href="./gallery.html">Bộ sưu tập</a>
           <a href="./contact.html">Liên hệ</a>
         </div>
       </div>
@@ -578,9 +580,7 @@
     <script>
       $(document).ready(function () {
         AOS.init();
-        setTimeout(function () {
-          $(".loading-screen").addClass("none-fade");
-        }, 3000);
+
         $(".menu-toggle").click(() => {
           $(".navbar-toggle-list").toggleClass("d-none");
         });
