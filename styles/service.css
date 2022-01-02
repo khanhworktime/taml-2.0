@@ -21,7 +21,8 @@
 /* Ads */
 .ads {
   height: fit-content;
-  padding: 20px 40px;
+  padding: 40px 20px;
+  max-width: 1180px;
 }
 .sale-header {
   background: rgb(123, 104, 0);
@@ -168,6 +169,38 @@
   background-image: url("../src/img/service/request.jpg");
   min-height: 500px;
 }
+
+/* Customer rate */
+.customer-rate{
+  padding: 60px 30px;
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(23,160,64,1) 2%, rgba(23,160,64,1) 5%, rgba(23,160,64,1) 50%, rgba(23,160,64,1) 94%, rgba(23,160,64,1) 97%, rgba(255,255,255,1) 100%);
+}
+.customer-rate .read-more{
+  color: #fff;
+}
+.customer-rate .read-more:before,
+.customer-rate .read-more:after{
+  border-color: #ddd;
+} 
+.cus-name{
+  font-weight: 700;
+}
+.cus-ref{
+  font-size: 1rem;
+  color: rgb(67, 170, 98);
+}
+
+
+.customer{
+  background: #fff;
+  max-width: 400px;
+  min-height: 100%;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0.26rem 2rem 0 rgb(0 0 0 / 14%);
+}
+
+
 
 /* Gallery */
 /* Read more */

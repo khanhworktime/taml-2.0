@@ -2,54 +2,88 @@
 .navbar {
   z-index: 1000;
   clear: both;
-  padding: 10px 20px;
+  padding: 10px 30px;
+  width: 100%;
 }
 
-.nav-brand img {
-  height: 45px;
-}
-
-.nav-items {
-  margin-right: 30px;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: #fff;
-  padding-left: 25px;
-  font-size: 1.1rem;
-  font-weight: 500;
-}
-
-.navbar a[class="current"],
-.navbar-toggle-list a[class="current"] {
-  font-weight: 700;
-}
-.menu-toggle {
-  cursor: pointer;
-}
-
-.navbar-toggle-list {
-  display: block;
-  z-index: 20;
-  right: 20px;
-  position: absolute;
-  border-radius: 3px;
-  background: #fff;
-  transition: all 1.2s;
-}
-
-.navbar-toggle-list a {
-  color: #000;
-  padding: 10px 20px;
-}
-.navbar-toggle-list a:hover {
-  background: rgb(5, 85, 73);
-  color: #fff;
+.navbar-brand img {
+  object-fit: cover;
+  height: 40px;
 }
 
 .navbar.scrolled {
   background-color: #141d2a !important;
   box-shadow: 0px 5px 10px #141d2a6e;
   transition: background-color 200ms linear;
+}
+
+.navbar ul{
+  list-style-type: none;
+}
+
+.navbar-list{
+  color: #fff;
+  margin-bottom: 0;
+}
+.navbar-item{
+  padding-left: 20px;
+}
+.navbar-item[current] > a{
+  font-weight: bold;
+}
+.navbar-item a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-toggle{
+  position:fixed;
+  right: 30px;
+  top: 40px;
+  z-index: 9999;
+  border: 0;
+  background: transparent;
+}
+.navbar-toggle[data-visible="false"] > .navbar-button{
+  background-image: url("../src/svg/toggleNav.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 24px;
+  width: 30px;
+}
+.navbar-toggle[data-visible="true"] > .navbar-button{
+  background-image: url("../src/svg/toggleNav-close.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 24px;
+  width: 30px;
+}
+
+@media (max-width: 768px) {
+  .navbar{
+    right: 0;
+    inset: 0 0 0 50%;
+   height: 100vh;
+    transform: translateX(100%);
+    background-color: #141d2a;
+    transition: transform .3s ease-out;
+  }
+  .navbar[aria-visible="true"]{
+    transform: translateX(0%);
+  }
+  .navbar-list{
+    position: absolute;
+    left: 0px;
+    top: 50%;
+  }
+  .navbar-item{
+    padding-top: 30px
+  }
+  .navbar-brand{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
 }
