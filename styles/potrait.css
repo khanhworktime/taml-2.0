@@ -1,0 +1,101 @@
+@import url("./nav.css");
+@import url("./footer.css");
+
+/* Item section */
+.item-section{
+    margin-top: 100px;
+    padding-inline: 50px;
+}
+.item-name{
+    font-weight: 700;
+}
+.img-container{
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.img-container img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.item-description{
+    padding-inline: min(20px,10vw);
+    height: fit-content;
+}
+
+.item-tag{
+    cursor: pointer;
+    margin-bottom: 20px;
+    width: fit-content;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 50px;
+    background-color: rgb(34, 84, 209);
+}
+
+.group-size{
+    padding: 10px 20px;
+}
+.group-size option{
+    padding-block: 20px;
+}
+.discount{
+    margin-top: 20px;
+}
+.price{
+    margin: 10px 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1;
+}
+.price sm{
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+.order{
+    margin: 20px 0;
+    padding: 10px 40px;
+}
+
+#datepicker{
+    width:180px;
+    cursor: pointer;
+}
+#datepicker > span:hover{
+    cursor: pointer;
+}
+
+.des-header{
+    font-weight: 600;
+}
+
+/* Accordion */
+span.icon{
+    font-size: 1.5rem;
+}
+.accordion .card{
+    cursor: pointer;
+    border: none;
+}
+
+.accordion .card-header{
+    padding: 20px 30px;
+}
+
+.accordion .title{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.accordion .service-provide{
+    list-style-type: "📸 ";
+}
+
+.accordion .quality-provide{
+    list-style-type: "❤️ ";
+}
+.accordion .guarantee{
+    font-style: italic;
+}

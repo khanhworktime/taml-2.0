@@ -19,7 +19,7 @@
   min-height: 670px;
   animation: bgcolor 15s infinite reverse;
   position: absolute;
-  padding:0 30px;
+  padding:0 max(30px,5vw);
   width: 45%;
   min-width: 314px;
   top: 0;
@@ -56,7 +56,7 @@
 /* Second component */
 .second-component {
   width: 100%;
-  padding: 10% 3%;
+  padding: 50px;
 }
 .intro-container h1 {
   font-size: 3rem;
@@ -95,7 +95,7 @@
 
 /* Third component */
 .blog{
-  background: rgb(52, 189, 88); ;
+  background: rgba(8, 100, 32, 0.763); ;
   padding: 50px;
 }
 .third-component-header {
@@ -163,7 +163,7 @@
 /* Fourth component */
 
 .fourth-component {
-  padding: 20px;
+  padding: 50px;
 
   margin: 0;
 }
@@ -204,11 +204,12 @@
 }
 .fifth-component {
   margin-bottom: 200px;
+  padding: 0px min(50px, 10vw);
 }
 
 .sale-intro,
 .service-most{
-  padding: 0 20px;
+  padding: 0 50px;
   margin: 20px 0 5px 0;
 }
 

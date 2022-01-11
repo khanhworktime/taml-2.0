@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="./styles/pop.css">
+    <script src="./js/pop.js"></script>
+    <link rel="shortcut icon" href="./src/svg/favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/potrait.css" />
+    <script src="./js/web-load.js"></script>
+
+    <title>Tiệm ảnh màu lá | Chụp ảnh chân dung</title>
+</head>
+
+<body class="noselect">
+
+    <!-- Nav -->
+
+    <button class="navbar-toggle d-block d-md-none" data-visible="false">
+        <div class="navbar-button"></div>
+    </button>
+    <div class="navbar scrolled d-flex flex-column flex-md-row justify-content-between fixed-top" aria-visible="false">
+        <a href="#" class="navbar-brand">
+            <img src="./src/img/logo.svg" alt="" />
+        </a>
+        <ul class="navbar-list d-flex flex-column flex-md-row justify-content-center">
+            <li class="navbar-item" current><a href="./index.html"> Trang chủ</a></li>
+            <li class="navbar-item"><a href="./news.html"> Blog</a></li>
+            <li class="navbar-item"><a href="./service.html"> Dịch vụ</a></li>
+            <li class="navbar-item"><a href="./contact.html"> Liên hệ</a></li>
+        </ul>
+    </div>
+    <!-- End nav -->
+
+    <!-- Item-section -->
+    <div class="item-section">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="img-container img-pop" href="./src/img/service/potrait/p1.JPG">
+                    <img class="hvr-grow item-img" src="./src/img/service/potrait/p1.JPG" alt="">
+                </div>
+                <div class="accordion" id="accordion1">
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"
+                            id="headingOne">
+                            <span class="title">Dịch vụ</span>
+                            <span class="title">+</span>
+                        </div>
+
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordion1">
+                            <div class="card-body">
+                                <ul class="service-provide">
+                                    <li>Máy ảnh sử dụng: Canon 70-200mm f2.8L IS II</li>
+                                    <li>Chỉnh sửa theo ý muốn</li>
+                                    <li>Hổ trợ make up và tư vấn trang phục</li>
+                                    <li>Luôn luôn hết mình vì khách hàng</li>
+                                </ul>
+                                <p class="guarantee">Cam kết hoàn tiền nếu không được trải nghiệm 100% như trên !</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+                            id="headingOne">
+                            <span class="title">Chất lượng</span>
+                            <span class="title">+</span>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordion1">
+                            <div class="card-body">
+                                <ul class="quality-provide">
+                                    <li>Cam kết chất lượng ảnh và video cao</li>
+                                    <li>Hổ trợ làm album ảnh hoặc ảnh nhiều size</li>
+                                    <li>Ảnh của bạn với sự cho phép, sẽ được trưng bày tại Tiệm ảnh</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="item-description d-flex flex-column justify-content-between">
+                    <h2 class="item-name mb-3">[Potrait] Chụp ảnh chân dung</h2>
+                    <span class="item-tag">Dịch vụ</span>
+                    <select class="group-size" name="group-size" id="group-size">
+                        <option value="1">Cá nhân</option>
+                        <option value="2">Nhóm: 2 - 5 người</option>
+                    </select>
+                    <span class="discount">Giảm giá mùa xuân 40% </span>
+                    <span class="price">VND 180.000<br>
+                        <sm>(Giá gốc VND 300.000)</sm>
+                    </span>
+                    <label>Chọn ngày dự kiến: </label>
+                    <div id="datepicker" class="input-group date" data-date-format="dd-mm-yyyy"> <input
+                            class="form-control  noselect" readonly="" type="text"> <span
+                            class="input-group-addon input-group-text"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" class="bi bi-calendar-week"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
+                                <path
+                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                            </svg></span>
+                    </div>
+                    <button class="m-button order">Đặt lịch</button>
+                    <div class="description text-justify">
+                        <h5 class="des-header">Dịch vụ chụp ảnh chân dung chuyên nghiệp</h5>
+                        <p>Với tiêu chí mang đến cho các bạn trải nghiệm đầy chuyên nghiệp và tinh
+                            tế, Tiệm ảnh chúng
+                            mình cung cấp cho các bạn gói dịch vụ chụp chụp ảnh chân dung, bao gồm cả ngoài trời hoặc
+                            trong nhà với giá cực kì hạt dẽ.</p>
+                        <h5 class="des-header text-justify">Trải nghiệm cảm giác trung tâm</h5>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <link rel="stylesheet prefetch"
+        href="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            AOS.init();
+            groupSize = $(".group-size");
+            itemImg = $(".item-img");
+            itemImgContainer = $(".img-container");
+
+            $('.img-pop').magnificPopup({
+                type: 'image',
+                removalDelay: 300,
+                mainClass: "mfp-fade"
+            });
+            groupSize.change(function () {
+                sizeVal = groupSize.val();
+                price = sizeVal * 180;
+                oldPrice = price / 0.6;
+                itemImg.attr("src", `./src/img/service/potrait/p${sizeVal}.JPG`)
+                itemImgContainer.attr("href", `./src/img/service/potrait/p${sizeVal}.JPG`)
+                $(".price").html(`<span class="price">VND ${price}.000<br><sm>(Giá gốc VND ${oldPrice}.000)</sm></span>`)
+            })
+
+            $("#datepicker").datepicker({
+                autoclose: true,
+                todayHighlight: true
+            }).datepicker('update', new Date());
+
+            $(".navbar-toggle").click(() => {
+                let visibility = $(".navbar-toggle").get(0).getAttribute("data-visible");
+                if (visibility === "false") {
+                    $(".navbar-toggle").get(0).setAttribute("data-visible", "true");
+                    $(".navbar").get(0).setAttribute("aria-visible", "true");
+                } else {
+                    $(".navbar-toggle").get(0).setAttribute("data-visible", "false");
+                    $(".navbar").get(0).setAttribute("aria-visible", "false");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

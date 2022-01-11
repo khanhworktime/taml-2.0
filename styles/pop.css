@@ -31,6 +31,7 @@
   top: 0;
   padding: 0 8px;
   box-sizing: border-box;
+  z-index: 10000;
 }
 
 .mfp-container:before {

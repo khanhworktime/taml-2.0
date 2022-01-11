@@ -28,18 +28,23 @@ ul {
   border-radius: 10px;
   background: rgb(149, 12, 23);
   border: none;
+  width: fit-content;
   color: #fff;
   box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
   transition: transform 0.3s;
 }
+.m-button:hover{
+  transform: scale(1.05);
+}
+
 .height-100 {
   height: 100% !important;
 }
 
-.m-button:hover {
-  transform: scale(1.1);
-}
-
 .gap-20 {
   gap: 20;
+}
+
+.text-justify{
+  text-align: justify;
 }

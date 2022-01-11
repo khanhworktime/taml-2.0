@@ -36,9 +36,9 @@
       <img src="./src/img/logo.svg" alt="" />
     </a>
     <ul class="navbar-list d-flex flex-column flex-md-row justify-content-center">
-      <li class="navbar-item" current><a href="./index.html"> Trang chủ</a></li>
+      <li class="navbar-item"><a href="./index.html"> Trang chủ</a></li>
       <li class="navbar-item"><a href="./news.html"> Blog</a></li>
-      <li class="navbar-item"><a href="./service.html"> Dịch vụ</a></li>
+      <li class="navbar-item" current><a href="./service.html"> Dịch vụ</a></li>
       <li class="navbar-item"><a href="./contact.html"> Liên hệ</a></li>
     </ul>
   </div>
@@ -69,7 +69,7 @@
           <span class="price">Chỉ còn 180.000 VND (Giảm 40%)</span>
           <span class="old-price">Giá cũ 300.000 VND</span>
         </div>
-        <button class="m-button align-self-md-start">Đặt ngay</button>
+        <button class="m-button align-self-md-start" id="order1">Đặt ngay</button>
       </div>
       <div class="promo-image-wrap col-md-6">
         <div class="promo-image"></div>
@@ -114,7 +114,7 @@
           <div class="col-md-6 service-offer mt-5 mt-md-0 container">
             <div class="row gap-20">
               <div class="col service-item-wrap">
-                <div class="service-item" id="indoor1" data-aos="zoom-in-up">
+                <div class="service-item" id="indoor1">
                   <div class="
                         item-content
                         d-flex
@@ -126,7 +126,7 @@
                 </div>
               </div>
               <div class="col service-item-wrap">
-                <div class="service-item" id="indoor2" data-aos="zoom-in-up">
+                <div class="service-item" id="indoor2">
                   <div class="
                         item-content
                         d-flex
@@ -140,7 +140,7 @@
             </div>
             <div class="row gap-20 mt-4">
               <div class="col service-item-wrap">
-                <div class="service-item" id="indoor3" data-aos="zoom-in-up">
+                <div class="service-item" id="indoor3">
                   <div class="
                         item-content
                         d-flex
@@ -152,7 +152,7 @@
                 </div>
               </div>
               <div class="col service-item-wrap">
-                <div class="service-item" id="indoor4" data-aos="zoom-in-up">
+                <div class="service-item" id="indoor4">
                   <div class="
                         item-content
                         d-flex
@@ -584,6 +584,9 @@
         mainClass: "mfp-fade"
       });
 
+      $("#order1").click(function () {
+        location.href = "./potrait.html"
+      })
 
       $(".service-item").each((i, item) => {
         item.addEventListener("mouseover", () => {
