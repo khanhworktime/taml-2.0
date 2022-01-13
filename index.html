@@ -24,10 +24,9 @@
   <title>Tiệm ảnh màu lá | Home</title>
 </head>
 
-<body class="noselect position-relative">
+<body class="noselect position-relative" onload="loaded()">
   <!-- Loading -->
   <div class="loading-screen d-flex justify-content-center align-items-center">
-    <img src="./src/img/slider/slider2.jpg" class="loading-wait d-none" onload="loaded()" alt="" />
     <div class="loader"></div>
   </div>
   <!-- Nav -->
@@ -37,7 +36,7 @@
   </button>
   <div class="navbar d-flex flex-column flex-md-row justify-content-between fixed-top" aria-visible="false">
     <a href="#" class="navbar-brand">
-      <img src="./src/img/logo.svg" alt="" />
+      <img src="./src/svg/logo.svg" alt="" />
     </a>
     <ul class="navbar-list d-flex flex-column flex-md-row justify-content-center">
       <li class="navbar-item" current><a href="./index.html"> Trang chủ</a></li>
@@ -48,11 +47,13 @@
   </div>
 
 
-  <div class="first-component">
+  <div class="first-component row">
     <!-- Title -->
-    <div class="title-container d-flex flex-column justify-content-center" data-aos="fade-right">
-      <span class="slider-subtitle">Chào mừng đến với</span>
-      <h1 class="slider-title">Tiệm ảnh <br />màu lá</h1>
+    <div class="col-sm-5 title-container d-flex flex-column justify-content-center" data-aos="fade-right">
+      <span class="slider-subtitle text-center">Chào mừng đến với</span>
+      <h1 class="slider-title text-center">Tiệm ảnh <br>màu lá</h1>
+    </div>
+    <div class="bgc col-sm-7 d-none d-sm-block">
     </div>
   </div>
   <!-- Second component -->
@@ -249,7 +250,7 @@
         ">
       <div class="col-xl-3 col-sm-6 col-padding">
         <div class="service-item d-flex flex-column align-items-center">
-          <div class="service-img"><img src="./src/img/gallery/4.jpg" alt=""></div>
+          <div class="service-img"><img src="./src/img/all/p27.jpg" alt=""></div>
           <div class="service-content d-flex flex-column align-items-center">
             <h3 class="service-name">Chụp 1-3 bạn</h3>
             <div class="service-price">300.000 VND</div>
@@ -263,7 +264,7 @@
       </div>
       <div class="col-xl-3 col-sm-6 col-padding">
         <div class="service-item d-flex flex-column align-items-center">
-          <div class="service-img"><img src="./src/img/service/service2.jpg" alt=""></div>
+          <div class="service-img"><img src="./src/img/all/p40.jpg" alt=""></div>
           <div class="service-content d-flex flex-column align-items-center">
             <h3 class="service-name">Chụp kỉ yếu</h3>
             <div class="service-price">1.400.000 VND</div>
@@ -277,7 +278,7 @@
       </div>
       <div class="col-xl-3 col-sm-6 col-padding">
         <div class="service-item d-flex flex-column align-items-center">
-          <div class="service-img"><img src="./src/img/service/service3.jpg" alt=""></div>
+          <div class="service-img"><img src="./src/img/all/p42.jpg" alt=""></div>
           <div class="service-content d-flex flex-column align-items-center">
             <h3 class="service-name">Chụp ảnh cưới</h3>
             <div class="service-price">Liên hệ</div>
@@ -290,7 +291,7 @@
       </div>
       <div class="col-xl-3 col-sm-6 col-padding">
         <div class="service-item d-flex flex-column align-items-center">
-          <div class="service-img"><img src="./src/img/service/service4.jpg" alt=""></div>
+          <div class="service-img"><img src="./src/img/all/p39.jpg" alt=""></div>
           <div class="service-content d-flex flex-column align-items-center">
             <h3 class="service-name">Chụp ảnh sản phẩm</h3>
             <div class="service-price">Liên hệ</div>

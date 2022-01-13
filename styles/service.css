@@ -5,12 +5,13 @@
 
 /* Header */
 .header {
-  padding: 70px 0px;
+  padding: 150px 0px;
   width: 100%;
   text-align: center;
-  background: url("../src/img/service/service-header.JPG") center no-repeat;
+  background: url("../src/img/all/p11.jpg") center no-repeat;
   background-size: cover;
   font-weight: 800;
+  font-size: 4rem;
   color: #fff;
 }
 
@@ -39,7 +40,7 @@
 .promo-image {
   height: 100%;
   min-height: 200px;
-  background: url("../src/img/news/news2.jpg") center no-repeat;
+  background: url("../src/img/all/s2.jpg") center no-repeat;
   background-size: cover;
 }
 .sale-price .price {
@@ -137,36 +138,36 @@
 
 /* Image pump */
 #indoor1 {
-  background-image: url("../src/img/service/indoor/indoor1.jpg");
+  background-image: url("../src/img/all/i1.jpg");
 }
 #indoor2 {
-  background-image: url("../src/img/service/indoor/indoor2.jpg");
+  background-image: url("../src/img/all/i2.jpg");
 }
 #indoor3 {
-  background-image: url("../src/img/service/indoor/indoor3.jpg");
+  background-image: url("../src/img/all/i3.jpg");
 }
 #indoor4 {
-  background-image: url("../src/img/service/indoor/indoor4.jpg");
+  background-image: url("../src/img/all/i4.jpg");
   background-size: contain;
 }
 
 #outdoor1 {
-  background-image: url("../src/img/service/outdoor/outdoor1.jpg");
+  background-image: url("../src/img/all/p35.JPG");
   background-position-y: -200px;
 }
 #outdoor2 {
-  background-image: url("../src/img/service/service2.jpg");
+  background-image: url("../src/img/all/p40.jpg");
 }
 
 #ads1 {
-  background-image: url("../src/img/service/service4.jpg");
+  background-image: url("../src/img/all/p39.jpg");
 }
 #ads2 {
-  background-image: url("../src/img/service/ads/ads2.jpg");
+  background-image: url("../src/img/all/p43.jpg");
 }
 
 #request1 {
-  background-image: url("../src/img/service/request.jpg");
+  background-image: url("../src/img/all/p30.jpg");
   min-height: 500px;
 }
 
@@ -251,7 +252,7 @@
 }
 
 .img-wrap {
-  cursor: pointer;
+  cursor: zoom-in;
   width: 100%;
 }
 

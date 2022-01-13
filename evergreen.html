@@ -14,25 +14,28 @@
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet" />
 
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <link rel="shortcut icon" href="./src/svg/favicon.svg" type="image/x-icon" />
   <link rel="stylesheet" href="./styles/evergreen.css" />
+  <script src="./js/web-load.js"></script>
 
   <title>
     Tiệm ảnh màu lá | Màu sắc nội thất nổi bậc năm 2022, Evergreen
   </title>
 </head>
 
-<body class="noselect">
+<body onload="loaded()" class="noselect">
+  <!-- Loading -->
+  <div class="loading-screen d-flex justify-content-center align-items-center">
+    <div class="loader"></div>
+  </div>
   <!-- Navbar -->
   <button class="navbar-toggle d-block d-md-none" data-visible="false">
     <div class="navbar-button"></div>
   </button>
   <div class="navbar d-flex flex-column flex-md-row justify-content-between fixed-top" aria-visible="false">
     <a href="#" class="navbar-brand">
-      <img src="./src/img/logo.svg" alt="" />
+      <img src="./src/svg/logo.svg" alt="" />
     </a>
     <ul class="navbar-list d-flex flex-column flex-md-row justify-content-center">
       <li class="navbar-item"><a href="./index.html"> Trang chủ</a></li>
@@ -407,11 +410,7 @@
   </footer>
 
   <script src="./js/nav-scroll.js"></script>
-  <script>
-    $(document).ready(function () {
-      AOS.init();
-    });
-  </script>
+
 </body>
 
 </html>

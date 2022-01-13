@@ -5,7 +5,7 @@
 /* First component */
 .first-component {
   height: 650px;
-  background: url("../src/img/news/sliderbg1.JPG") center no-repeat;
+  background: url("../src/img/all/s0.jpg") center no-repeat;
   background-size: cover;
   color: #fff;
   padding: 20px;
@@ -64,15 +64,15 @@
 }
 /* Image pump */
 #pinned1 {
-  background: url("../src/img/news/sliderbg1.JPG") center no-repeat;
+  background: url("../src/img/all/p16.jpg") center no-repeat;
   background-size: cover;
 }
 #pinned2 {
-  background: url("../src/img/news/sliderbg2.JPG") center no-repeat;
+  background: url("../src/img/all/p18.JPG") center no-repeat;
   background-size: cover;
 }
 #pinned3 {
-  background: url("../src/img/news/sliderbg3.JPG") center no-repeat;
+  background: url("../src/img/all/s6.jpg") center no-repeat;
   background-size: cover;
 }
 
@@ -187,44 +187,44 @@
 }
 /* Image pump */
 #news-img1 {
-  background: url("../src/img/news/news1.jpg") center no-repeat;
+  background: url("../src/img/all/s1.jpg") center no-repeat;
   background-size: cover;
 }
 #news-img2 {
-  background: url("../src/img/news/news2.jpg") center no-repeat;
+  background: url("../src/img/all/s2.jpg") center no-repeat;
   background-size: cover;
 }
 #news-img3 {
-  background: url("../src/img/news/news3.jpg") center no-repeat;
+  background: url("../src/img/all/s3.jpg") center no-repeat;
   background-size: cover;
 }
 
 #news-img4 {
-  background: url("../src/img/news/news4.jpg") center no-repeat;
+  background: url("../src/img/all/s4.jpg") center no-repeat;
   background-size: cover;
 }
 #news-img5 {
-  background: url("../src/img/news/news5.jpeg") center no-repeat;
+  background: url("../src/img/all/s5.jpeg") center no-repeat;
   background-size: cover;
 }
 
 #news-img6 {
-  background: url("../src/img/news/news6.jpg") center no-repeat;
+  background: url("../src/img/all/s6.jpg") center no-repeat;
   background-size: cover;
 }
 
 #news-img7 {
-  background: url("../src/img/news/news7.jpg") center no-repeat;
+  background: url("../src/img/all/s7.jpg") center no-repeat;
   background-size: cover;
 }
 
 #news-img8 {
-  background: url("../src/img/news/sliderbg2.JPG") center no-repeat;
+  background: url("../src/img/all/p12.JPG") center no-repeat;
   background-size: cover;
 }
 
 #news-img9 {
-  background: url("../src/img/news/news9.jpg") center no-repeat;
+  background: url("../src/img/all/s9.jpg") center no-repeat;
   background-size: cover;
 }
 

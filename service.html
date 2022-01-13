@@ -21,19 +21,23 @@
   <link rel="stylesheet" href="./styles/service.css" />
   <link rel="stylesheet" href="./styles/pop.css">
   <script src="./js/pop.js"></script>
+  <script src="./js/web-load.js"></script>
 
   <title>Tiệm ảnh màu lá | Blog</title>
 </head>
 
-<body class="noselect">
-  <!-- First part -->
+<body onload="loaded()" class="noselect">
+  <!-- Loading -->
+  <div class="loading-screen d-flex justify-content-center align-items-center">
+    <div class="loader"></div>
+  </div>
   <!-- Nav -->
   <button class="navbar-toggle d-block d-md-none" data-visible="false">
     <div class="navbar-button"></div>
   </button>
   <div class="navbar d-flex flex-column flex-md-row justify-content-between fixed-top" aria-visible="false">
     <a href="#" class="navbar-brand">
-      <img src="./src/img/logo.svg" alt="" />
+      <img src="./src/svg/logo.svg" alt="" />
     </a>
     <ul class="navbar-list d-flex flex-column flex-md-row justify-content-center">
       <li class="navbar-item"><a href="./index.html"> Trang chủ</a></li>
@@ -354,35 +358,7 @@
   <!-- Gallery -->
   <div class="gallery container-fluid">
     <div class="row justify-content-center gap-20">
-      <div class="col-5 col-sm-4 col-md-3 col-xl-2 d-flex flex-column gap-20">
-        <div class="gallery-item">
-          <div class="img-wrap"><img></div>
-        </div>
-        <div class="gallery-item">
-          <div class="img-wrap"><img></div>
-        </div>
-        <div class="gallery-item">
-          <div class="img-wrap"><img></div>
-        </div>
-        <div class="gallery-item">
-          <div class="img-wrap"><img></div>
-        </div>
-      </div>
-      <div class="col-5 col-sm-4 col-md-3 col-xl-2 d-flex flex-column gap-20">
-        <div class="gallery-item">
-          <div class="img-wrap"><img></div>
-        </div>
-        <div class="gallery-item">
-          <div class="img-wrap"><img></div>
-        </div>
-        <div class="gallery-item">
-          <div class="img-wrap"><img></div>
-        </div>
-        <div class="gallery-item">
-          <div class="img-wrap"><img></div>
-        </div>
-      </div>
-      <div class="col-5 col-sm-4 col-md-3 col-xl-2 d-flex flex-column gap-20">
+      <div class="col-5 col-sm-4 col-xl-2 d-flex flex-column gap-20">
         <div class="gallery-item">
           <div class="img-wrap"><img></div>
         </div>
@@ -399,7 +375,21 @@
           <div class="img-wrap"><img></div>
         </div>
       </div>
-      <div class="col-5 col-sm-4 col-md-3 col-xl-2 d-flex flex-column gap-20">
+      <div class="col-5 col-sm-4 col-xl-2 d-flex flex-column gap-20">
+        <div class="gallery-item">
+          <div class="img-wrap"><img></div>
+        </div>
+        <div class="gallery-item">
+          <div class="img-wrap"><img></div>
+        </div>
+        <div class="gallery-item">
+          <div class="img-wrap"><img></div>
+        </div>
+        <div class="gallery-item">
+          <div class="img-wrap"><img></div>
+        </div>
+      </div>
+      <div class="col-5 col-sm-4 col-xl-2 d-flex flex-column gap-20">
         <div class="gallery-item">
           <div class="img-wrap"><img></div>
         </div>
@@ -416,7 +406,7 @@
           <div class="img-wrap"><img></div>
         </div>
       </div>
-      <div class="col-5 col-sm-4 col-md-3 col-xl-2 d-flex flex-column gap-20">
+      <div class="col-5 col-sm-4 col-xl-2 d-flex flex-column gap-20">
         <div class="gallery-item">
           <div class="img-wrap"><img></div>
         </div>
@@ -430,10 +420,24 @@
           <div class="img-wrap"><img></div>
         </div>
       </div>
-      <div class="col-5 col-sm-4 col-md-3 col-xl-2 d-flex flex-column gap-20">
+      <div class="col-5 col-sm-4 col-xl-2 d-flex flex-column gap-20">
         <div class="gallery-item">
           <div class="img-wrap"><img></div>
         </div>
+        <div class="gallery-item">
+          <div class="img-wrap"><img></div>
+        </div>
+        <div class="gallery-item">
+          <div class="img-wrap"><img></div>
+        </div>
+        <div class="gallery-item">
+          <div class="img-wrap"><img></div>
+        </div>
+        <div class="gallery-item">
+          <div class="img-wrap"><img></div>
+        </div>
+      </div>
+      <div class="col-5 col-sm-4 col-xl-2 d-flex flex-column gap-20">
         <div class="gallery-item">
           <div class="img-wrap"><img></div>
         </div>
@@ -616,8 +620,8 @@
 
       let galleryImagePump = () => {
         $(".gallery-item img").each((i, item) => {
-          item.setAttribute("src", `../src/img/gallery/${i}.jpg`)
-          item.parentNode.setAttribute("href", `../src/img/gallery/${i}.jpg`)
+          item.setAttribute("src", `../src/img/all/p${i + 11}.jpg`)
+          item.parentNode.setAttribute("href", `../src/img/all/p${i + 11}.jpg`)
           item.addEventListener("load", () => {
             item.classList.add("d-block");
           })

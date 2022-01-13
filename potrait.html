@@ -15,8 +15,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet" />
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="./styles/pop.css">
     <script src="./js/pop.js"></script>
     <link rel="shortcut icon" href="./src/svg/favicon.svg" type="image/x-icon" />
@@ -25,11 +23,15 @@
     <link rel="stylesheet" href="./styles/lightslider.min.css">
     <script src="./js/lightslider.min.js"></script>
 
+
     <title>Tiệm ảnh màu lá | Chụp ảnh chân dung</title>
 </head>
 
-<body class="noselect">
-
+<body onload="loaded()" class="noselect">
+    <!-- Loading -->
+    <div class="loading-screen d-flex justify-content-center align-items-center">
+        <div class="loader"></div>
+    </div>
     <!-- Nav -->
 
     <button class="navbar-toggle d-block d-md-none" data-visible="false">
@@ -37,7 +39,7 @@
     </button>
     <div class="navbar scrolled d-flex flex-column flex-md-row justify-content-between fixed-top" aria-visible="false">
         <a href="#" class="navbar-brand">
-            <img src="./src/img/logo.svg" alt="" />
+            <img src="./src/svg/logo.svg" alt="" />
         </a>
         <ul class="navbar-list d-flex flex-column flex-md-row justify-content-center">
             <li class="navbar-item"><a href="./index.html"> Trang chủ</a></li>
@@ -52,8 +54,8 @@
     <div class="item-section">
         <div class="row">
             <div class="col-sm-6 mb-5">
-                <div class="img-container img-pop" href="./src/img/service/potrait/p1.JPG">
-                    <img class="hvr-grow item-img" src="./src/img/service/potrait/p1.JPG" alt="">
+                <div class="img-container img-pop" href="./src/img/all/p18.JPG">
+                    <img class="hvr-grow item-img" src="./src/img/all/p18.JPG" alt="">
                 </div>
                 <div class="accordion" id="accordion1">
                     <div class="card">
@@ -199,8 +201,6 @@
 
     <script>
         $(document).ready(function () {
-            AOS.init();
-
             $("#lightSlider").lightSlider({
                 item: 4,
                 autoWidth: false,
@@ -238,8 +238,8 @@
                 sizeVal = groupSize.val();
                 price = sizeVal * 180;
                 oldPrice = price / 0.6;
-                itemImg.attr("src", `./src/img/service/potrait/p${sizeVal}.JPG`)
-                itemImgContainer.attr("href", `./src/img/service/potrait/p${sizeVal}.JPG`)
+                itemImg.attr("src", `./src/img/all/p${parseInt(sizeVal) + 17}.JPG`)
+                itemImgContainer.attr("href", `./src/img/all/p${parseInt(sizeVal) + 17}.JPG`)
                 $(".price").html(`<span class="price">VND ${price}.000<br><sm>(Giá gốc VND ${oldPrice}.000)</sm></span>`)
             })
 
@@ -259,10 +259,12 @@
                 }
             });
 
+            let potraitCode = ["p18", "p13", "p15", "p23", "p27", "p28", "p35", "p36", "p37", "s3", "s4"];
+
             let galleryImagePump = () => {
                 $(".customer-slider img").each((i, item) => {
-                    item.setAttribute("src", `../src/img/service/potrait/p${i}.jpg`)
-                    item.parentNode.setAttribute("href", `../src/img/service/potrait/p${i}.jpg`)
+                    item.setAttribute("src", `../src/img/all/${potraitCode[i]}.jpg`)
+                    item.parentNode.setAttribute("href", `../src/img/all//${potraitCode[i]}.jpg`)
                     item.addEventListener("load", () => {
                         item.classList.add("d-block");
                     })

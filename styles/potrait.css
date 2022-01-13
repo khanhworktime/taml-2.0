@@ -12,7 +12,7 @@
 .img-container{
     width: 100%;
     overflow: hidden;
-    cursor: pointer;
+    cursor:zoom-in;
     margin-bottom: 20px;
 }
 .img-container img{
