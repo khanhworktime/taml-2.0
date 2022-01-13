@@ -49,7 +49,7 @@
   padding: 10px;
 }
 .pined-news-bg:hover {
-  transform: scale(1.3);
+  transform: scale(1.05);
 }
 .pined-news-border {
   padding: 30px;
@@ -108,7 +108,7 @@
 }
 /* Third component */
 .third-component {
-  padding: 0px 30px;
+  padding: 0px min(50px, 5vw);
 }
 
 .news-row {
@@ -127,7 +127,6 @@
 .news-item {
   border-radius: 5px;
   max-width: 400px;
-  min-height: 600px;
   cursor: pointer;
   background: #fff;
   position: relative;
@@ -152,9 +151,22 @@
   color: rgb(10, 201, 51);
 }
 .news-header {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+          line-clamp: 2; 
+  -webkit-box-orient: vertical;
+ font-size: 1.4rem;
   margin: 10px 0px;
 }
 .news-description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* number of lines to show */
+          line-clamp: 4; 
+  -webkit-box-orient: vertical;
   margin-top: 10px;
 }
 .news-post-date {
@@ -230,9 +242,14 @@
   transition: all 0.2s;
   margin-bottom: 10px;
 }
+.most-view, .must-read{
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
 
 .single-post:hover {
-  transform: scale(1.2) !important;
+  transform: scale(1.03) !important;
 }
 
 .post-info {

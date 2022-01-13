@@ -210,7 +210,10 @@
 .sale-intro,
 .service-most{
   padding: 0 50px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
   margin: 20px 0 5px 0;
+
 }
 
 .service-item{
@@ -224,7 +227,7 @@
   width: 100%;
 }
 .col-padding{
-  padding: 20px 30px;
+  padding: 20px 15px;
 }
 .service-img img{
   object-fit: cover;

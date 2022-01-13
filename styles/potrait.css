@@ -99,3 +99,21 @@ span.icon{
 .accordion .guarantee{
     font-style: italic;
 }
+
+
+/* Customer pics */
+.customer-pics{
+    padding-inline: 50px;
+}
+
+.img-wrap{
+    height: 100%;
+}
+
+.img-wrap img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    display: none;
+  }

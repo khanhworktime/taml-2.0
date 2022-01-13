@@ -22,6 +22,8 @@
     <link rel="shortcut icon" href="./src/svg/favicon.svg" type="image/x-icon" />
     <link rel="stylesheet" href="./styles/potrait.css" />
     <script src="./js/web-load.js"></script>
+    <link rel="stylesheet" href="./styles/lightslider.min.css">
+    <script src="./js/lightslider.min.js"></script>
 
     <title>Tiệm ảnh màu lá | Chụp ảnh chân dung</title>
 </head>
@@ -38,9 +40,9 @@
             <img src="./src/img/logo.svg" alt="" />
         </a>
         <ul class="navbar-list d-flex flex-column flex-md-row justify-content-center">
-            <li class="navbar-item" current><a href="./index.html"> Trang chủ</a></li>
+            <li class="navbar-item"><a href="./index.html"> Trang chủ</a></li>
             <li class="navbar-item"><a href="./news.html"> Blog</a></li>
-            <li class="navbar-item"><a href="./service.html"> Dịch vụ</a></li>
+            <li class="navbar-item" current><a href="./service.html"> Dịch vụ</a></li>
             <li class="navbar-item"><a href="./contact.html"> Liên hệ</a></li>
         </ul>
     </div>
@@ -49,7 +51,7 @@
     <!-- Item-section -->
     <div class="item-section">
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-6 mb-5">
                 <div class="img-container img-pop" href="./src/img/service/potrait/p1.JPG">
                     <img class="hvr-grow item-img" src="./src/img/service/potrait/p1.JPG" alt="">
                 </div>
@@ -97,7 +99,7 @@
             </div>
             <div class="col-sm-6">
                 <div class="item-description d-flex flex-column justify-content-between">
-                    <h2 class="item-name mb-3">[Potrait] Chụp ảnh chân dung</h2>
+                    <h2 class="item-name mb-3">【Potrait】Chụp ảnh chân dung</h2>
                     <span class="item-tag">Dịch vụ</span>
                     <select class="group-size" name="group-size" id="group-size">
                         <option value="1">Cá nhân</option>
@@ -122,15 +124,71 @@
                     <button class="m-button order">Đặt lịch</button>
                     <div class="description text-justify">
                         <h5 class="des-header">Dịch vụ chụp ảnh chân dung chuyên nghiệp</h5>
-                        <p>Với tiêu chí mang đến cho các bạn trải nghiệm đầy chuyên nghiệp và tinh
-                            tế, Tiệm ảnh chúng
-                            mình cung cấp cho các bạn gói dịch vụ chụp chụp ảnh chân dung, bao gồm cả ngoài trời hoặc
+                        <p>🙌 Với tiêu chí mang đến cho các bạn trải nghiệm đầy chuyên nghiệp và tinh
+                            tế, Tiệm ảnh chúng mình cung cấp cho các bạn gói dịch vụ chụp chụp ảnh chân dung, bao gồm cả
+                            ngoài trời hoặc
                             trong nhà với giá cực kì hạt dẽ.</p>
                         <h5 class="des-header text-justify">Trải nghiệm cảm giác trung tâm</h5>
-
+                        <p>📸 Do team chụp ảnh của tụi tớ chi gồm 5 bạn, cho nên chúng tớ sẽ luôn tập trung hoàn thiện
+                            trải
+                            nghiệm trải nghiệm cho bạn nhiều nhất có thể.</p>
+                        <h5 class="des-header text-justify">Chất lượng đầu ra đảm bảo</h5>
+                        <p>🌟 Đảm bảo về chất lượng ảnh luôn trong trạng thái tốt nhất và chuyên nghiệp nhất. Với kinh
+                            nghiệm chỉnh sửa và làm việc với ảnh và video chất lượng cao, Tiệm ảnh xin cam kết các bạn
+                            về chất lượng đầu ra. Cùng với đó là hổ trợ việc in theo dạng album hoặc theo yêu cầu</p>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- Division -->
+
+    <div class="read-more-wrap text-center mb-5 mt-5">
+        <h4 class="read-more ">Các tác phẩm trước đó của khách
+        </h4>
+    </div>
+
+    <!-- Customer pics -->
+    <div class="customer-pics">
+        <ul class="customer-slider" id="lightSlider">
+            <li>
+                <div class="img-wrap img-pop"><img></div>
+            </li>
+            <li>
+                <div class="img-wrap img-pop"><img></div>
+            </li>
+            <li>
+                <div class="img-wrap img-pop"><img></div>
+            </li>
+            <li>
+                <div class="img-wrap img-pop"><img></div>
+            </li>
+            <li>
+                <div class="img-wrap img-pop"><img></div>
+            </li>
+            <li>
+                <div class="img-wrap img-pop"><img></div>
+            </li>
+            <li>
+                <div class="img-wrap img-pop"><img></div>
+            </li>
+            <li>
+                <div class="img-wrap img-pop"><img></div>
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- Division -->
+    <div class="read-more-wrap text-center mb-5 mt-5">
+        <h4 class="read-more ">Các dịch vụ khác
+        </h4>
+    </div>
+
+    <!-- More service -->
+    <div class="more-service">
+        <div class="row">
         </div>
     </div>
 
@@ -142,6 +200,30 @@
     <script>
         $(document).ready(function () {
             AOS.init();
+
+            $("#lightSlider").lightSlider({
+                item: 4,
+                autoWidth: false,
+                slideMargin: 20,
+                responsive: [
+                    {
+                        breakpoint: 800,
+                        settings: {
+                            item: 3,
+                            slideMove: 1,
+                            slideMargin: 6,
+                        }
+                    },
+                    {
+                        breakpoint: 575,
+                        settings: {
+                            item: 2,
+                            slideMove: 1
+                        }
+                    }
+                ]
+            });
+
             groupSize = $(".group-size");
             itemImg = $(".item-img");
             itemImgContainer = $(".img-container");
@@ -151,6 +233,7 @@
                 removalDelay: 300,
                 mainClass: "mfp-fade"
             });
+
             groupSize.change(function () {
                 sizeVal = groupSize.val();
                 price = sizeVal * 180;
@@ -175,6 +258,17 @@
                     $(".navbar").get(0).setAttribute("aria-visible", "false");
                 }
             });
+
+            let galleryImagePump = () => {
+                $(".customer-slider img").each((i, item) => {
+                    item.setAttribute("src", `../src/img/service/potrait/p${i}.jpg`)
+                    item.parentNode.setAttribute("href", `../src/img/service/potrait/p${i}.jpg`)
+                    item.addEventListener("load", () => {
+                        item.classList.add("d-block");
+                    })
+                })
+            }
+            galleryImagePump();
         });
     </script>
 </body>

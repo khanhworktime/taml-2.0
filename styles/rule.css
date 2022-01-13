@@ -8,6 +8,10 @@ body {
 }
 a {
   text-decoration: none;
+  color: #000;
+}
+a:hover{
+  color: unset;
 }
 ul {
   list-style: none;
@@ -35,6 +39,7 @@ ul {
 }
 .m-button:hover{
   transform: scale(1.05);
+  color: #fff!important;
 }
 
 .height-100 {
@@ -47,4 +52,35 @@ ul {
 
 .text-justify{
   text-align: justify;
+}
+
+/* Read more */
+.read-more-wrap {
+  overflow: hidden;
+}
+.read-more {
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #000;
+  position: relative;
+  display: inline-block;
+  padding: 0px 20px;
+}
+.read-more:before,
+.read-more:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  border-bottom: 1px solid;
+  border-color: #ddd;
+  width: calc(30vw - 20px);
+  margin: 0 30px;
+}
+
+.read-more:before {
+  right: 100%;
+}
+.read-more:after {
+  left: 100%;
 }

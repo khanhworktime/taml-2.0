@@ -121,36 +121,6 @@
   background-image: url("../src/img/author/author4.jpg");
 }
 
-/* Read more */
-.read-more-wrap {
-  overflow: hidden;
-}
-.read-more {
-  font-size: 16px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #000;
-  position: relative;
-  display: inline-block;
-  padding: 0px 20px;
-}
-.read-more:before,
-.read-more:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  border-bottom: 1px solid;
-  border-color: #ddd;
-  width: calc(30vw - 20px);
-  margin: 0 30px;
-}
-
-.read-more:before {
-  right: 100%;
-}
-.read-more:after {
-  left: 100%;
-}
 
 /* Fourth component */
 .fourth-component {
