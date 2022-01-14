@@ -580,13 +580,24 @@
   <script src="./js/slider.js"></script>
   <script src="./js/nav-scroll.js"></script>
   <script>
-    $(document).ready(function () {
+    $(document).ready(async function () {
       AOS.init();
       $('.img-wrap').magnificPopup({
         type: 'image',
         removalDelay: 300,
         mainClass: "mfp-fade"
       });
+
+      let galleryImagePump = () => {
+        $(".gallery-item img").each((i, item) => {
+          item.setAttribute("src", `./src/img/all/p${i + 11}.jpg`)
+          item.parentNode.setAttribute("href", `./src/img/all/p${i + 11}.jpg`)
+          item.addEventListener("load", () => {
+            item.classList.add("d-block");
+          })
+        })
+      }
+      await galleryImagePump();
 
       $("#order1").click(function () {
         location.href = "./potrait.html"
@@ -618,16 +629,7 @@
         });
       });
 
-      let galleryImagePump = () => {
-        $(".gallery-item img").each((i, item) => {
-          item.setAttribute("src", `./src/img/all/p${i + 11}.jpg`)
-          item.parentNode.setAttribute("href", `./src/img/all/p${i + 11}.jpg`)
-          item.addEventListener("load", () => {
-            item.classList.add("d-block");
-          })
-        })
-      }
-      galleryImagePump();
+
     });
   </script>
 </body>
