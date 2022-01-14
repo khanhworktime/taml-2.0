@@ -620,8 +620,8 @@
 
       let galleryImagePump = () => {
         $(".gallery-item img").each((i, item) => {
-          item.setAttribute("src", `../src/img/all/p${i + 11}.jpg`)
-          item.parentNode.setAttribute("href", `../src/img/all/p${i + 11}.jpg`)
+          item.setAttribute("src", `./src/img/all/p${i + 11}.jpg`)
+          item.parentNode.setAttribute("href", `./src/img/all/p${i + 11}.jpg`)
           item.addEventListener("load", () => {
             item.classList.add("d-block");
           })
