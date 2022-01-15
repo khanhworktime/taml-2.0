@@ -8,7 +8,7 @@
   padding: 150px 0px;
   width: 100%;
   text-align: center;
-  background: url("../src/img/all/p11.jpg") center no-repeat;
+  background: url("../src/img/all/s1.jpg") center no-repeat;
   background-size: cover;
   font-weight: 800;
   font-size: 4rem;
@@ -64,6 +64,7 @@
   padding: 20px 25px;
   font-weight: 700;
   cursor: pointer;
+  transition: all 0.2s;
 }
 .service-tab:hover {
   padding: 20px 25px;
@@ -152,8 +153,8 @@
 }
 
 #outdoor1 {
-  background-image: url("../src/img/all/p35.JPG");
-  background-position-y: -200px;
+  background-image: url("../src/img/all/p45.JPG");
+  background-position-y: -75px;
 }
 #outdoor2 {
   background-image: url("../src/img/all/p40.jpg");
@@ -167,7 +168,7 @@
 }
 
 #request1 {
-  background-image: url("../src/img/all/p30.jpg");
+  background-image: url("../src/img/all/p44.jpg");
   min-height: 500px;
 }
 
@@ -260,5 +261,4 @@
   object-fit: cover;
   width: 100%;
   border-radius: 5px;
-  display: none;
 }

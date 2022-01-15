@@ -287,37 +287,37 @@
 }
 @keyframes bgslider {
   0% {
-    background-image: url("../src/img/all/s0.jpg");
+    background-image: url("../src/img/all/p12.jpg");
   }
   10% {
-    background-image: url("../src/img/all/s6.jpg");
+    background-image: url("../src/img/all/p22.jpg");
   }
   20% {
-    background-image: url("../src/img/all/p12.JPG");
+    background-image: url("../src/img/all/p21.JPG");
   }
   30% {
     background-image: url("../src/img/all/p16.jpg");
   }
   40% {
-    background-image: url("../src/img/all/p20.jpg");
+    background-image: url("../src/img/all/p17.JPG");
   }
   50% {
-    background-image: url("../src/img/all/p22.jpg");
+    background-image: url("../src/img/all/i2.jpg");
   }
   60% {
-    background-image: url("../src/img/all/p24.jpg");
+    background-image: url("../src/img/all/p15.jpg");
   }
   70% {
-    background-image: url("../src/img/all/p26.jpg");
+    background-image: url("../src/img/all/s7.JPG");
   }
   80% {
-    background-image: url("../src/img/all/p30.jpg");
-  }
-  90% {
     background-image: url("../src/img/all/s9.jpg");
   }
-  100% {
+  90% {
     background-image: url("../src/img/all/s0.jpg");
+  }
+  100% {
+    background-image: url("../src/img/all/p12.jpg");
   }
 }
 
