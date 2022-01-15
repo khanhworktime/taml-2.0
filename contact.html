@@ -19,6 +19,9 @@
     integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <link rel="stylesheet" href="./styles/lightslider.min.css">
+  <script src="./js/lightslider.min.js"></script>
+
   <link rel="shortcut icon" href="./src/svg/favicon.svg" type="image/x-icon" />
   <link rel="stylesheet" href="./styles/contact.css" />
   <script src="./js/web-load.js"></script>
@@ -65,14 +68,43 @@
   <!-- Member info -->
 
   <div class="contact-wrap row">
-    <div class="contact-col-1 col-md-5">
+    <div class="contact-col-1 col-md-5 mt-3">
       <div class="member-contact-card">
-        <h3 class="info-header">Thông tin tụi tớ</h3>
-        <div class="member-info-wrap d-flex">
-
-        </div>
+        <h3 class="info-header mb-3">Thông tin tụi tớ</h3>
+        <ul class="info-slider" id="infoSlider">
+          <li class="position-relative">
+            <div class="mem-name">Võ Chí Khánh</div>
+            <div class="mem-pos">Nhóm Trưởng</div>
+            <div class="mem-num">20DH110125</div>
+            <a href="https://fb.com/chikhanh.duong" target="_blank" class="mem-link">Liên hệ</a>
+            <div class="mem-img position-absolute" id="mem1"></div>
+          </li>
+          <li class="position-relative">
+            <div class="mem-name">Nguyễn Đình Hùng</div>
+            <div class="mem-pos">Thành viên</div>
+            <div class="mem-num">20DH111994</div>
+            <a href="https://www.facebook.com/profile.php?id=100015979178787" target="_blank" class="mem-link">Liên
+              hệ</a>
+            <div class="mem-img position-absolute" id="mem2"></div>
+          </li>
+          <li class="position-relative">
+            <div class="mem-name">Đinh Trần Đăng Huy</div>
+            <div class="mem-pos">Thành viên</div>
+            <div class="mem-num">20DH111999</div>
+            <a href="https://www.facebook.com/profile.php?id=100014821934325" target="_blank" class="mem-link">Liên
+              hệ</a>
+            <div class="mem-img position-absolute" id="mem3"></div>
+          </li>
+          <li class="position-relative">
+            <div class="mem-name">Nguyễn Khánh Min</div>
+            <div class="mem-pos">Thành viên</div>
+            <div class="mem-num">20DH112080</div>
+            <a href="https://www.facebook.com/min.nguyen.2503" target="_blank" class="mem-link">Liên hệ</a>
+            <div class="mem-img position-absolute" id="mem4"></div>
+          </li>
+        </ul>
       </div>
-      <form class="contact-form d-flex justify-content-center align-items-center">
+      <form class="contact-form d-flex justify-content-center align-items-center mb-3">
         <div class="form-input">
           <h3>Hãy gửi chúng tớ tin nhắn</h3>
           <form>
@@ -99,7 +131,7 @@
         </div>
       </form>
     </div>
-    <div class="contact-col-2 col-md-7">
+    <div class="col-md-7 mt-3">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.463577157205!2d106.66530011458906!3d10.775762592321954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f9023a3a85d%3A0xdee5c99a7b02feab!2sHuflit!5e0!3m2!1svi!2sus!4v1640867684191!5m2!1svi!2sus"
         style="border: 0" allowfullscreen="" loading="lazy" class="map"></iframe>
@@ -210,11 +242,16 @@
         </ul>
       </div>
     </div>
-    </div>
-    </div>
   </footer>
-  <script src="./js/slider.js"></script>
   <script src="./js/nav-scroll.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#infoSlider").lightSlider({
+        item: 1,
+        loop: true
+      });
+    })
+  </script>
 </body>
 
 </html>

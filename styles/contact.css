@@ -1,6 +1,5 @@
 @import url("./nav.css");
 @import url("./footer.css");
-@import url("./slider.css");
 
 /* Contact 1 */
 .contact-info {
@@ -40,30 +39,62 @@
 
 /* Member contact */
 .member-contact-card {
-  padding: 30px;
-  box-shadow: 0 0.26rem 2rem 0 rgb(0 0 0 / 14%);
+  color: #fff;
+  background-color: rgb(31, 84, 33);
+  box-shadow: 0 0.26rem 2rem rgb(0 0 0 / 14%);
+  padding-bottom: 40px;
 }
-.member-contact-card.fake {
-  margin: 50px 0 -40px 0;
+a{
+  color: #fff;
 }
-
-.member-list {
-  padding: 0;
-  margin-right: 20px;
-}
-.member-info {
-  margin-bottom: 5px;
-}
-.member-info a {
-  margin-right: 10px;
+.info-header {
+  padding: 50px;
+  padding-bottom: 0;
 }
 
+.info-slider li{
+  padding-inline: 64px;
+}
+
+.mem-name{
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.mem-link{
+  text-transform: uppercase;
+  text-decoration:underline;
+}
+
+.mem-img{
+  top: 0;
+  right: 60px;
+  width: 100px;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Author pump */
+#mem1{
+  background-image: url("../src/img/author/author1.jpg");
+}
+#mem2{
+  background-image: url("../src/img/author/author2.jpg");
+}
+#mem3{
+  background-image: url("../src/img/author/author3.jpg");
+}
+#mem4{
+  background-image: url("../src/img/author/author4.jpg");
+}
 
 /* Contact Form */
 .contact-form {
-  margin-top: 30px;
+  margin: 20px 0 0 0!important;
   background: #fff;
-  padding: 30px;
+  padding: 50px 30px;
   box-shadow: 0 0.26rem 2rem 0 rgb(0 0 0 / 14%);
 }
 
