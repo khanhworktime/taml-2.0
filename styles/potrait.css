@@ -14,6 +14,7 @@
     overflow: hidden;
     cursor:zoom-in;
     margin-bottom: 20px;
+    display: none;
 }
 .img-container img{
     object-fit: cover;
