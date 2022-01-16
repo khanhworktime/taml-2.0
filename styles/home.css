@@ -92,7 +92,8 @@
 
 /* Third component */
 .blog{
-  background: rgba(8, 100, 32, 0.763); ;
+  background: url("../src/img/all/p18.jpg") center no-repeat;
+  background-size: cover;
   padding: 50px;
 }
 .third-component-header {
@@ -112,9 +113,8 @@
 .third-cover {
   width: 100%;
   height: 100%;
-  background: url("../src/img/all/p17.jpg") center no-repeat;
+  background: url("../src/img/all/p18.jpg") center no-repeat;
   background-size: cover;
-  box-shadow: 5px 5px 5px grey;
   border-radius: 3px;
 }
 

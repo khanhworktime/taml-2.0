@@ -161,22 +161,28 @@
     <div class="customer-pics">
         <ul class="customer-slider" id="customerSlider">
             <li>
-                <div class="img-wrap img-pop"><img></div>
+                <div class="img-wrap img-pop" href="./src/img/all/p23.jpg"><img src="./src/img/all/p23.jpg"
+                        class="d-block"></div>
             </li>
             <li>
-                <div class="img-wrap img-pop"><img></div>
+                <div class="img-wrap img-pop" href="./src/img/all/p13.jpg"><img src="./src/img/all/p13.jpg"
+                        class="d-block"></div>
             </li>
             <li>
-                <div class="img-wrap img-pop"><img></div>
+                <div class="img-wrap img-pop" href="./src/img/all/p14.jpg"><img src="./src/img/all/p14.jpg"
+                        class="d-block"></div>
             </li>
             <li>
-                <div class="img-wrap img-pop"><img></div>
+                <div class="img-wrap img-pop" href="./src/img/all/p15.jpg"><img src="./src/img/all/p15.jpg"
+                        class="d-block"></div>
             </li>
             <li>
-                <div class="img-wrap img-pop"><img></div>
+                <div class="img-wrap img-pop" href="./src/img/all/p16.jpg"><img src="./src/img/all/p16.jpg"
+                        class="d-block"></div>
             </li>
             <li>
-                <div class="img-wrap img-pop"><img></div>
+                <div class="img-wrap img-pop" href="./src/img/all/p19.jpg"><img src="./src/img/all/p19.jpg"
+                        class="d-block"></div>
             </li>
         </ul>
     </div>
@@ -444,19 +450,6 @@
                     $(".navbar").get(0).setAttribute("aria-visible", "false");
                 }
             });
-
-            let potraitCode = ["p23", "p13", "p14", "p15", "p16", "p19", "p21"];
-
-            let galleryImagePump = () => {
-                $(".customer-slider img").each((i, item) => {
-                    item.setAttribute("src", `./src/img/all/${potraitCode[i]}.jpg`)
-                    item.parentNode.setAttribute("href", `./src/img/all/${potraitCode[i]}.jpg`)
-                    item.addEventListener("load", () => {
-                        item.classList.add("d-block");
-                    })
-                })
-            }
-            galleryImagePump();
         });
     </script>
 </body>
