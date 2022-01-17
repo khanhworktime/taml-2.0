@@ -11,7 +11,7 @@
   height: 40px;
 }
 
-.navbar.scrolled {
+.navbar.scrolled, .navbar-toggle.scrolled {
   background-color: #141d2a !important;
   box-shadow: 0px 5px 10px #141d2a6e;
   transition: background-color 200ms linear;
@@ -37,8 +37,9 @@
 }
 
 .navbar-toggle{
+  padding: 10px;
   position:fixed;
-  right: 30px;
+  right: 20px;
   top: 20px;
   z-index: 1001;
   border: 0;
@@ -68,7 +69,7 @@
    height: 100vh;
     transform: translateX(100%);
     background-color: #141d2a;
-    transition: transform .3s ease-out;
+    transition: transform .3s ease-out!important;
   }
   .navbar[aria-visible="true"]{
     transform: translateX(0%);
