@@ -3,7 +3,7 @@
 @import url("./hvr.css");
 html,
 body {
-  font-family: "Montserrat", sans-serif !important;
+  font-family: "Montserrat", sans-serif, Arial, Helvetica;
   overflow-x: hidden;
 }
 a {
