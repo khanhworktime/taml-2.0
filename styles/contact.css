@@ -23,7 +23,7 @@
 
 .contact-cover {
   background: url("../src/img/all/s1.jpg") center center no-repeat;
-  background-size: cover;
+  background-size: contain;
   width: 45%;
   height: 700px;
   border-radius: 10px;
