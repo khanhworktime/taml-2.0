@@ -2,11 +2,22 @@
 @import url("./footer.css");
 
 /* Contact 1 */
-.contact-info {
-  padding: 100px 20px 30px 20px;
+
+.contact-cover-bg{
   background: url("../src/img/all/s1.jpg") center no-repeat;
   background-size: cover;
   min-height: 600px;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+  filter: blur(1.8px)
+}
+.contact-info {
+  padding: 100px 20px 30px 20px;
+  min-height: 600px;
+  position: relative;
 }
 
 
@@ -24,7 +35,7 @@
 }
 
 .about-header {
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 30px;
 }
 
@@ -50,15 +61,26 @@ a{
 .info-header {
   padding: 50px;
   padding-bottom: 0;
+  font-weight: 700;
 }
 
 .info-slider li{
   padding-inline: 64px;
 }
 
+.member-contact-card .row{
+  margin: 0;
+}
+
 .mem-name{
   font-weight: 600;
   text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .info-header,
+  .mem-info{
+    text-align: left!important;
+  }
 }
 
 .mem-link{
@@ -67,10 +89,8 @@ a{
 }
 
 .mem-img{
-  top: 0;
-  right: 60px;
   width: 100px;
-  height: 100%;
+  height: 100px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -98,12 +118,19 @@ a{
   box-shadow: 0 0.26rem 2rem 0 rgb(0 0 0 / 14%);
 }
 
+.contact-form h3{
+  font-weight: 700;
+}
+.form-input{
+  width: 100%;
+}
 .form-line {
   margin-top: 20px;
 }
 
 .contact-form label {
   min-width: 90px;
+  font-weight: 600;
 }
 
 .contact-form input {
@@ -119,9 +146,15 @@ a{
   padding: 10px 15px;
 }
 
+.error-line{
+  font-weight: 600;
+  color: #eb495c;
+}
+
 .map {
   width: 100%;
   height: 100%;
+  min-height: 300px;
   box-shadow: 0 0.26rem 2rem 0 rgb(0 0 0 / 14%);
 }
 

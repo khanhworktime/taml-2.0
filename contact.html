@@ -13,6 +13,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
 
   <script src="https://kit.fontawesome.com/7414e22221.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
@@ -51,6 +52,7 @@
   </div>
   <!--end Nav-->
   <div class="contact-info d-flex justify-content-center align-items-center">
+    <div class="contact-cover-bg"></div>
     <div class="col-md-6 d-none d-md-block contact-cover"></div>
     <div class="col-md-6 about">
       <h2 class="about-header">
@@ -70,65 +72,89 @@
   <div class="contact-wrap row">
     <div class="contact-col-1 col-md-5 mt-3">
       <div class="member-contact-card">
-        <h3 class="info-header mb-3">Thông tin tụi tớ</h3>
+        <h3 class="info-header mb-3 text-center">Thông tin tụi tớ</h3>
         <ul class="info-slider" id="infoSlider">
-          <li class="position-relative">
-            <div class="mem-name">Võ Chí Khánh</div>
-            <div class="mem-pos">Nhóm Trưởng</div>
-            <div class="mem-num">20DH110125</div>
-            <a href="https://fb.com/chikhanh.duong" target="_blank" class="mem-link">Liên hệ</a>
-            <div class="mem-img position-absolute" id="mem1"></div>
+          <li class="row justify-content-between">
+            <div class="mem-info text-center col-xl-6">
+              <div class="mem-name">Võ Chí Khánh</div>
+              <div class="mem-pos">Nhóm Trưởng</div>
+              <div class="mem-num">20DH110125</div>
+              <a href="https://fb.com/chikhanh.duong" target="_blank" class="mem-link">Liên hệ</a>
+            </div>
+            <div
+              class="mem-img-wrap col-xl-6 mt-3 mt-xl-0 order-1 order-md-2 d-flex justify-content-md-end justify-content-center">
+              <div class="mem-img" id="mem1"></div>
+            </div>
           </li>
-          <li class="position-relative">
-            <div class="mem-name">Nguyễn Đình Hùng</div>
-            <div class="mem-pos">Thành viên</div>
-            <div class="mem-num">20DH111994</div>
-            <a href="https://www.facebook.com/profile.php?id=100015979178787" target="_blank" class="mem-link">Liên
-              hệ</a>
-            <div class="mem-img position-absolute" id="mem2"></div>
+          <li class="row justify-content-between">
+            <div class="mem-info text-center col-xl-6">
+              <div class="mem-name">Nguyễn Đình Hùng</div>
+              <div class="mem-pos">Thành viên</div>
+              <div class="mem-num">20DH111994</div>
+              <a href="https://www.facebook.com/profile.php?id=100015979178787" target="_blank" class="mem-link">Liên
+                hệ</a>
+            </div>
+            <div
+              class="mem-img-wrap col-xl-6 mt-3 mt-xl-0 order-1 order-md-2 d-flex justify-content-md-end justify-content-center">
+              <div class="mem-img" id="mem2"></div>
+            </div>
           </li>
-          <li class="position-relative">
-            <div class="mem-name">Đinh Trần Đăng Huy</div>
-            <div class="mem-pos">Thành viên</div>
-            <div class="mem-num">20DH111999</div>
-            <a href="https://www.facebook.com/profile.php?id=100014821934325" target="_blank" class="mem-link">Liên
-              hệ</a>
-            <div class="mem-img position-absolute" id="mem3"></div>
+          <li class="row justify-content-between">
+            <div class="mem-info text-center col-xl-6">
+              <div class="mem-name">Đinh Trần Đăng Huy</div>
+              <div class="mem-pos">Thành viên</div>
+              <div class="mem-num">20DH111999</div>
+              <a href="https://www.facebook.com/profile.php?id=100014821934325" target="_blank" class="mem-link">Liên
+                hệ</a>
+            </div>
+            <div
+              class="mem-img-wrap col-xl-6 mt-3 mt-xl-0 order-1 order-md-2 d-flex justify-content-md-end justify-content-center">
+              <div class="mem-img" id="mem3"></div>
+            </div>
           </li>
-          <li class="position-relative">
-            <div class="mem-name">Nguyễn Khánh Min</div>
-            <div class="mem-pos">Thành viên</div>
-            <div class="mem-num">20DH112080</div>
-            <a href="https://www.facebook.com/min.nguyen.2503" target="_blank" class="mem-link">Liên hệ</a>
-            <div class="mem-img position-absolute" id="mem4"></div>
+          <li class="row justify-content-between">
+            <div class="mem-info text-center col-md-6">
+              <div class="mem-name">Nguyễn Khánh Min</div>
+              <div class="mem-pos">Thành viên</div>
+              <div class="mem-num">20DH112080</div>
+              <a href="https://www.facebook.com/min.nguyen.2503" target="_blank" class="mem-link">Liên hệ</a>
+            </div>
+            <div
+              class="mem-img-wrap col-xl-6 mt-3 mt-xl-0 order-1 order-md-2 d-flex justify-content-md-end justify-content-center">
+              <div class="mem-img" id="mem4"></div>
+            </div>
           </li>
         </ul>
       </div>
-      <form class="contact-form d-flex justify-content-center align-items-center mb-3">
-        <div class="form-input">
+      <form class="contact-form d-flex justify-content-center align-items-center mb-3" id="c-form">
+        <fieldset class="form-input">
           <h3>Hãy gửi chúng tớ tin nhắn</h3>
           <form>
             <div class="form-line">
               <label for="first_name">Họ</label>
-              <input type="text" name="first_name" placeholder="First Name..." required />
+              <input type="text" name="first_name" placeholder="Nhập họ 🌠" required />
+              <span class="error-line"></span>
             </div>
             <div class="form-line">
               <label for="Last_name">Tên</label>
-              <input type="text" name="last_name" placeholder="Last Name..." required />
+              <input type="text" name="last_name" placeholder="Nhập tên 🌟" required />
+              <span class="error-line"></span>
             </div>
             <div class="form-line">
               <label for="email">Email</label>
-              <input type="email" name="email" placeholder="Email Here..." required />
+              <input type="email" name="email" placeholder="Nhập email 📧" required />
+              <span class="error-line"></span>
             </div>
             <div class="form-line">
               <label for="message">Tin nhắn</label>
-              <textarea name="message" required></textarea>
+              <textarea name="message" placeholder="Xin chào ?!🙌" required></textarea>
+              <span class="error-line"></span>
             </div>
             <div class="form-line d-flex justify-content-center">
               <button type="submit" class="m-button">Gửi tin nhắn</button>
             </div>
           </form>
-        </div>
+        </fieldset>
       </form>
     </div>
     <div class="col-md-7 mt-3">
@@ -250,6 +276,44 @@
         item: 1,
         loop: true
       });
+
+      $("#c-form").validate({
+        errorClass: "error-line",
+        errorElement: "span",
+        rules: {
+          "first_name": {
+            required: true,
+          },
+          "last_name": {
+            required: true,
+          },
+          "email": {
+            required: true,
+            email: true,
+          },
+          "message": {
+            required: true,
+          }
+        },
+        messages: {
+          "first_name": {
+            required: "Hãy nhập họ và chữ đệm vào !🙌"
+          },
+          "last_name": {
+            required: "Hãy nhập tên vào !🙌"
+          },
+          "email": {
+            required: "Hãy nhập email vào !🙌",
+            email: "Hãy nhập đúng định dạng email !📧"
+          },
+          "message": {
+            required: "Hãy nhập nội dung đi chứ nào !😒"
+          }
+        },
+        highlight: function (element, errorClass) {
+          $(element).removeClass(errorClass)
+        }
+      })
     })
   </script>
 </body>
