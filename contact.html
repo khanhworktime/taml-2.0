@@ -146,6 +146,11 @@
               <span class="error-line"></span>
             </div>
             <div class="form-line">
+              <label for="phone-num">Số điện thoại</label>
+              <input type="text" name="phone-num" placeholder="Nhập số điện thoại 📱" required />
+              <span class="error-line"></span>
+            </div>
+            <div class="form-line">
               <label for="message">Tin nhắn</label>
               <textarea name="message" placeholder="Xin chào ?!🙌" required></textarea>
               <span class="error-line"></span>
@@ -291,6 +296,10 @@
             required: true,
             email: true,
           },
+          "phone-num": {
+            required: true,
+            digits: true
+          },
           "message": {
             required: true,
           }
@@ -305,6 +314,10 @@
           "email": {
             required: "Hãy nhập email vào !🙌",
             email: "Hãy nhập đúng định dạng email !📧"
+          },
+          "phone-num": {
+            required: "Hãy nhập số điện thoại vào !🙌",
+            digits: "Nhập sai số điện thoại rồi !😓 (Đừng nhập đấu '+' nhé)"
           },
           "message": {
             required: "Hãy nhập nội dung đi chứ nào !😒"
